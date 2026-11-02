@@ -1,19 +1,24 @@
 {
   "source_sha256": {
-    "results/costs/metrics.csv": "af1c24f4b4d7978733f7f5f681ac593bffcb6f55614a23c341bcc8410be2ac22",
-    "results/costs/yearly.csv": "2fa4d44cbd9493d611a38e2a08e708aa06c11b66da1c1b174cd9f68a8eda28f6",
-    "results/costs/monthly.csv": "e950b1cbccc19ce5fee851b4a38b5dae46da4ab4662ddbf35275f33fc2f783ce",
-    "results/costs/periods.csv": "45ce027004b89d8e06e936bb5edb4897708bcf9bf1d9c83815b90416fa938cf9",
-    "results/costs/daily.csv": "f203b397050851bc4d3ebf117a6f47cbc7207d10f713753cbd885e482e1254ec",
-    "results/costs/audit.json": "161c8450f3bf77d835d8a8a85256a99a3fcce234e5223fea3a4f1d4c624fab48",
-    "checks/release_validation.json": "6e4cb796386402b2eacf9ffb012b750fa35229cda94ae5dc50a66b71e674dbaa",
-    "release/README.template.md": "f568d5daff1f472b527bfcd88889847ac597bcdca05fdf81564dc48d967be91b",
-    "release/report.py": "7ce858ae23c1c11508ae8cc5761045cf2c96d5ca3eb7e5fea6cbd824d5d64a6f"
+    "results/costs/metrics.csv": "c82cdb4e00bca1b4cc7c577c2ebc2d127bcf1f3959d785fdf50da6d5b965bc76",
+    "results/costs/yearly.csv": "caacd1b5f836e05b46358ebf6b07a6dac3da55ba65e4b8f602ed9a5c56dd6c62",
+    "results/costs/monthly.csv": "70d4d83baf831b7ca7e3737f4630052405ab1c473f3827261748fc4a85035eec",
+    "results/costs/periods.csv": "76ad6bcf3f72f4140c5b9d6a0c7f0b0a1acb920348108f554be741882139891b",
+    "results/costs/daily.csv": "db8b1e92ea2fc19500d6b7b0437459ab35741dda4c8459932be4c244b1689066",
+    "results/costs/audit.json": "ab33822f0bf2cab289063e94f3887cc217a6ff5fe4e2a87918939b60db73a0bf",
+    "checks/release_validation.json": "f3ede38181654ffce9bbf0337f6f62dd9dc6417a237a0dbee5c426438ab7e079",
+    "checks/test_validation.json": "1a1a373e8c055660ce107fc579583d79529bab4d1690ff01e2b6d658c66c5ef7",
+    "checks/overlap_extension_inputs.json": "a7f3ec9d123146689e6c3b81e9458327a1a8b485f09df9fc915be4791e11420e",
+    "research/overlap_extension/output/execution.json": "f90bf46f33a1d769cc8e0591ebd45a2751106f87e3f4420804583eb51d2f649b",
+    "release/README.template.md": "3e1cace73d56d5255521b50f3bd9da836038d087a03637c566b6aa450c2cf895",
+    "release/report.py": "a3fdaf92c70998a6cca22e0ca4ad28c370da9d86d8944255bf964fc500c754ab"
   },
   "generated_sha256": {
-    "README.md": "4eec61116d69dda25b71508770400332112321058f7ebc67257de71726ecb3f8",
+    "README.md": "2006f77a1bfc3747f5a1c3979515678231410d2017436fb9b0223596d0a080df",
     "reports/performance.png": "f9bc10b9e36082b7b62b784f460e68bc050c3d603beb4da8112fdd9f07359d8d",
-    "reports/performance.svg": "bcee62c9f25278a44616dca7b4a47a7b18eecba33a863535c3b1a26f28ca64aa"
+    "reports/performance.svg": "6fd4546231b82069e271b0f3a837b4567ac819aadc0c0b2320a83d749b069f2e",
+    "reports/overlap_extension.png": "f45ed4a176e56811bd866b102f210e6bbac287ee77cf16aafcbb7df180b8ac9f",
+    "reports/overlap_extension.svg": "ed224b6f28d99822608586a7f2e1a9d767aa2a4aede2f2b8bdd3235f5cd1d1f8"
   },
   "interpretation": "Source-accounting gross and after-cost indices, not self-financing NAV"
 }

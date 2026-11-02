@@ -1,13 +1,25 @@
 """Economic-accounting edge cases for the source-cost overlay."""
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+import json
 
 import numpy as np
 import pandas as pd
 
-from release.costs import after_cost, aggregate, order_notional
+from release.costs import after_cost, aggregate, order_notional, run
 
 
 class CostAccountingTests(unittest.TestCase):
+    def test_missing_extension_cannot_report_complete_seven_model_costs(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            folder = root/'research/adf_risk_selection/output'
+            folder.mkdir(parents=True)
+            (folder/'execution.json').write_text(json.dumps({'complete': True, 'months': list(range(77))}))
+            with self.assertRaisesRegex(ValueError, 'b=4, b=5 and unlimited'):
+                run(root)
+
     def test_full_round_trip_charges_both_directions(self):
         entry, _, _ = order_notional([2, -1], [0, 0], [10, 20], [10, 20])
         exit_, _, _ = order_notional([0, 0], [2, -1], [10, 20], [10, 20])

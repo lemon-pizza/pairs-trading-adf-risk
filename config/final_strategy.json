@@ -1,6 +1,6 @@
 {
   "final_model": "ADF_RISK3",
-  "comparison_models": ["SOURCE_M", "ADF_RISK1", "ADF_RISK2", "ADF_RISK3"],
+  "comparison_models": ["SOURCE_M", "ADF_RISK1", "ADF_RISK2", "ADF_RISK3", "ADF_RISK4", "ADF_RISK5", "ADF_RISK_UNLIMITED"],
   "pair_count": "Original monthly matching cardinality, 205-216; no 20-pair limit",
   "maximum_pairs_per_stock": 3,
   "objective": "Sum of negative original unrounded ADF t statistics",

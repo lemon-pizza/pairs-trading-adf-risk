@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "checked_at": "2026-11-02T08:43:53.963224+00:00",
+  "models": [
+    "ADF_RISK1",
+    "ADF_RISK2",
+    "ADF_RISK3",
+    "SOURCE_M"
+  ],
+  "method": "Compare original published CSV field strings to the corresponding model rows in the extended combined CSV, preserving original row order; no floating-point tolerance.",
+  "files": {
+    "daily.csv": {
+      "original_rows": 27024,
+      "matched_new_rows": 27024,
+      "all_field_strings_exactly_equal": true,
+      "original_csv_sha256": "f203b397050851bc4d3ebf117a6f47cbc7207d10f713753cbd885e482e1254ec",
+      "new_combined_csv_sha256": "db8b1e92ea2fc19500d6b7b0437459ab35741dda4c8459932be4c244b1689066"
+    },
+    "metrics.csv": {
+      "original_rows": 16,
+      "matched_new_rows": 16,
+      "all_field_strings_exactly_equal": true,
+      "original_csv_sha256": "af1c24f4b4d7978733f7f5f681ac593bffcb6f55614a23c341bcc8410be2ac22",
+      "new_combined_csv_sha256": "c82cdb4e00bca1b4cc7c577c2ebc2d127bcf1f3959d785fdf50da6d5b965bc76"
+    },
+    "yearly.csv": {
+      "original_rows": 112,
+      "matched_new_rows": 112,
+      "all_field_strings_exactly_equal": true,
+      "original_csv_sha256": "2fa4d44cbd9493d611a38e2a08e708aa06c11b66da1c1b174cd9f68a8eda28f6",
+      "new_combined_csv_sha256": "caacd1b5f836e05b46358ebf6b07a6dac3da55ba65e4b8f602ed9a5c56dd6c62"
+    },
+    "monthly.csv": {
+      "original_rows": 1232,
+      "matched_new_rows": 1232,
+      "all_field_strings_exactly_equal": true,
+      "original_csv_sha256": "e950b1cbccc19ce5fee851b4a38b5dae46da4ab4662ddbf35275f33fc2f783ce",
+      "new_combined_csv_sha256": "70d4d83baf831b7ca7e3737f4630052405ab1c473f3827261748fc4a85035eec"
+    },
+    "periods.csv": {
+      "original_rows": 48,
+      "matched_new_rows": 48,
+      "all_field_strings_exactly_equal": true,
+      "original_csv_sha256": "45ce027004b89d8e06e936bb5edb4897708bcf9bf1d9c83815b90416fa938cf9",
+      "new_combined_csv_sha256": "76ad6bcf3f72f4140c5b9d6a0c7f0b0a1acb920348108f554be741882139891b"
+    }
+  },
+  "total_compared_rows": 28432
+}

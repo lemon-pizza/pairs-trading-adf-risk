@@ -2,18 +2,23 @@
   "passed": true,
   "complete": true,
   "validated_months": 77,
-  "protected_files": 951,
+  "protected_files": 1496,
   "models": [
     "SOURCE_M",
     "ADF_RISK1",
     "ADF_RISK2",
-    "ADF_RISK3"
+    "ADF_RISK3",
+    "ADF_RISK4",
+    "ADF_RISK5",
+    "ADF_RISK_UNLIMITED"
   ],
   "months": {
     "20161230": {
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 773.6054010510891,
         "training_variance": 1.0427981104204828e-05,
         "risk_budget": 1.0427981104204828e-05,
@@ -23,6 +28,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 847.7916040474277,
         "training_variance": 6.2450231251904505e-06,
         "risk_budget": 1.0427981104204828e-05,
@@ -32,6 +39,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 877.1151330380931,
         "training_variance": 6.393906558256619e-06,
         "risk_budget": 1.0427981104204828e-05,
@@ -41,8 +50,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 898.9515140400104,
         "training_variance": 6.166845208089056e-06,
+        "risk_budget": 1.0427981104204828e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 917.5840303221098,
+        "training_variance": 5.341310423572412e-06,
+        "risk_budget": 1.0427981104204828e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 933.0136938775726,
+        "training_variance": 5.934466911055328e-06,
+        "risk_budget": 1.0427981104204828e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 945.7366023316752,
+        "training_variance": 5.998795718549963e-06,
         "risk_budget": 1.0427981104204828e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -52,6 +96,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 791.2985881651348,
         "training_variance": 6.953662738770669e-06,
         "risk_budget": 6.953662738770669e-06,
@@ -61,6 +107,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 865.3023283570868,
         "training_variance": 6.739666604813721e-06,
         "risk_budget": 6.953662738770669e-06,
@@ -70,6 +118,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 900.074759437117,
         "training_variance": 6.9117467020501906e-06,
         "risk_budget": 6.953662738770669e-06,
@@ -79,8 +129,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 927.7737465836501,
         "training_variance": 6.789902604718023e-06,
+        "risk_budget": 6.953662738770669e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 951.0307576053065,
+        "training_variance": 6.885978298215009e-06,
+        "risk_budget": 6.953662738770669e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 970.0918686937671,
+        "training_variance": 6.9171483943048855e-06,
+        "risk_budget": 6.953662738770669e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 989.8951999848812,
+        "training_variance": 5.819206016408728e-06,
         "risk_budget": 6.953662738770669e-06,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -90,6 +175,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 771.528273547967,
         "training_variance": 6.498438691172084e-06,
         "risk_budget": 6.498438691172084e-06,
@@ -99,6 +186,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 847.6539734906046,
         "training_variance": 5.059398174382808e-06,
         "risk_budget": 6.498438691172084e-06,
@@ -108,6 +197,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 878.9552372982782,
         "training_variance": 4.9131856801950424e-06,
         "risk_budget": 6.498438691172084e-06,
@@ -117,8 +208,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 900.521628859643,
         "training_variance": 4.755059916089227e-06,
+        "risk_budget": 6.498438691172084e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 919.6686966049797,
+        "training_variance": 4.7682370957765555e-06,
+        "risk_budget": 6.498438691172084e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 934.5748773204227,
+        "training_variance": 4.924668922430905e-06,
+        "risk_budget": 6.498438691172084e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 950.139796860881,
+        "training_variance": 5.116596128772256e-06,
         "risk_budget": 6.498438691172084e-06,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -128,6 +254,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 777.3432560940958,
         "training_variance": 7.310244719007288e-06,
         "risk_budget": 7.310244719007288e-06,
@@ -137,6 +265,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 847.1330359017722,
         "training_variance": 5.265569004634297e-06,
         "risk_budget": 7.310244719007288e-06,
@@ -146,6 +276,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 878.2742991614158,
         "training_variance": 4.690876948155072e-06,
         "risk_budget": 7.310244719007288e-06,
@@ -155,8 +287,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 901.528971343414,
         "training_variance": 4.633237566405194e-06,
+        "risk_budget": 7.310244719007288e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 920.6609510732566,
+        "training_variance": 4.762116230448824e-06,
+        "risk_budget": 7.310244719007288e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 937.0223137673252,
+        "training_variance": 6.752212988005144e-06,
+        "risk_budget": 7.310244719007288e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 952.7776772247526,
+        "training_variance": 6.768301724621721e-06,
         "risk_budget": 7.310244719007288e-06,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -166,6 +333,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 783.151767619673,
         "training_variance": 5.629382459658005e-06,
         "risk_budget": 5.629382459658005e-06,
@@ -175,6 +344,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 845.697121736606,
         "training_variance": 4.886820167644435e-06,
         "risk_budget": 5.629382459658005e-06,
@@ -184,6 +355,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 876.9362995410876,
         "training_variance": 5.102519293307855e-06,
         "risk_budget": 5.629382459658005e-06,
@@ -193,8 +366,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 901.9047133386948,
         "training_variance": 5.013444004693356e-06,
+        "risk_budget": 5.629382459658005e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 923.2773976364524,
+        "training_variance": 4.923540150057202e-06,
+        "risk_budget": 5.629382459658005e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 941.578674687476,
+        "training_variance": 4.845855283807534e-06,
+        "risk_budget": 5.629382459658005e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 959.4238735967449,
+        "training_variance": 4.812674110179064e-06,
         "risk_budget": 5.629382459658005e-06,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -204,6 +412,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 769.9789712571817,
         "training_variance": 8.50828648971248e-06,
         "risk_budget": 8.50828648971248e-06,
@@ -213,6 +423,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 843.4432508260451,
         "training_variance": 6.848723771256117e-06,
         "risk_budget": 8.50828648971248e-06,
@@ -222,6 +434,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 877.7880784128938,
         "training_variance": 6.6374149665978024e-06,
         "risk_budget": 8.50828648971248e-06,
@@ -231,8 +445,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 902.2881461492782,
         "training_variance": 6.994573918355879e-06,
+        "risk_budget": 8.50828648971248e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 922.1304507439172,
+        "training_variance": 6.935754441299114e-06,
+        "risk_budget": 8.50828648971248e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 939.6270120499196,
+        "training_variance": 6.66405307054183e-06,
+        "risk_budget": 8.50828648971248e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 957.8745123215685,
+        "training_variance": 6.384999595813871e-06,
         "risk_budget": 8.50828648971248e-06,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -242,6 +491,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 809.5553512267063,
         "training_variance": 3.997979029152487e-06,
         "risk_budget": 3.997979029152487e-06,
@@ -251,6 +502,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 877.2432927317249,
         "training_variance": 3.8260022856067975e-06,
         "risk_budget": 3.997979029152487e-06,
@@ -260,6 +513,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 911.7432672113903,
         "training_variance": 3.969336156089098e-06,
         "risk_budget": 3.997979029152487e-06,
@@ -269,8 +524,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 937.6491108938935,
         "training_variance": 3.9511501571038605e-06,
+        "risk_budget": 3.997979029152487e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 959.3221563532829,
+        "training_variance": 3.800110933480509e-06,
+        "risk_budget": 3.997979029152487e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 976.656397180775,
+        "training_variance": 3.7807450562584044e-06,
+        "risk_budget": 3.997979029152487e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 995.4457381765585,
+        "training_variance": 3.5287765619884226e-06,
         "risk_budget": 3.997979029152487e-06,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -280,6 +570,8 @@
       "SOURCE_M": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 801.5846588279603,
         "training_variance": 5.962742939850958e-06,
         "risk_budget": 5.962742939850958e-06,
@@ -289,6 +581,8 @@
       "ADF_RISK1": {
         "pairs": 215,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 878.4775470101281,
         "training_variance": 4.362348113538092e-06,
         "risk_budget": 5.962742939850958e-06,
@@ -298,6 +592,8 @@
       "ADF_RISK2": {
         "pairs": 215,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 912.2973522125626,
         "training_variance": 3.974201715461786e-06,
         "risk_budget": 5.962742939850958e-06,
@@ -307,8 +603,43 @@
       "ADF_RISK3": {
         "pairs": 215,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 937.0943351056006,
         "training_variance": 4.951701258562302e-06,
+        "risk_budget": 5.962742939850958e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 215,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 957.9364429811701,
+        "training_variance": 4.955444315523802e-06,
+        "risk_budget": 5.962742939850958e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 215,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 975.954015082105,
+        "training_variance": 4.954816653749598e-06,
+        "risk_budget": 5.962742939850958e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 215,
+        "max_degree": 19,
+        "degree_limit": null,
+        "effective_solver_cap": 215,
+        "score": 996.2470659087181,
+        "training_variance": 5.137509351763336e-06,
         "risk_budget": 5.962742939850958e-06,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -318,6 +649,8 @@
       "SOURCE_M": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 812.8072999303569,
         "training_variance": 5.838658977185745e-06,
         "risk_budget": 5.838658977185745e-06,
@@ -327,6 +660,8 @@
       "ADF_RISK1": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 880.3769776653239,
         "training_variance": 3.8092385540138792e-06,
         "risk_budget": 5.838658977185745e-06,
@@ -336,6 +671,8 @@
       "ADF_RISK2": {
         "pairs": 216,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 913.4235569958041,
         "training_variance": 3.6598475342208473e-06,
         "risk_budget": 5.838658977185745e-06,
@@ -345,8 +682,43 @@
       "ADF_RISK3": {
         "pairs": 216,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 937.8537632849619,
         "training_variance": 3.6501215506059407e-06,
+        "risk_budget": 5.838658977185745e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 216,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 957.5560197256762,
+        "training_variance": 3.6133923162874153e-06,
+        "risk_budget": 5.838658977185745e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 216,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 973.7226219499241,
+        "training_variance": 3.8289260441046695e-06,
+        "risk_budget": 5.838658977185745e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 216,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 216,
+        "score": 991.0442333225665,
+        "training_variance": 3.955634028800208e-06,
         "risk_budget": 5.838658977185745e-06,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -356,6 +728,8 @@
       "SOURCE_M": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 820.5862815977155,
         "training_variance": 5.282468107328534e-06,
         "risk_budget": 5.282468107328534e-06,
@@ -365,6 +739,8 @@
       "ADF_RISK1": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 890.317239393093,
         "training_variance": 5.260217445596632e-06,
         "risk_budget": 5.282468107328534e-06,
@@ -374,6 +750,8 @@
       "ADF_RISK2": {
         "pairs": 216,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 926.0182088862629,
         "training_variance": 5.063784044677496e-06,
         "risk_budget": 5.282468107328534e-06,
@@ -383,8 +761,43 @@
       "ADF_RISK3": {
         "pairs": 216,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 953.2564092602681,
         "training_variance": 5.040733997180659e-06,
+        "risk_budget": 5.282468107328534e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 216,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 973.479090231777,
+        "training_variance": 5.142665371001492e-06,
+        "risk_budget": 5.282468107328534e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 216,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 992.4554592525394,
+        "training_variance": 5.166481821773193e-06,
+        "risk_budget": 5.282468107328534e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 216,
+        "max_degree": 15,
+        "degree_limit": null,
+        "effective_solver_cap": 216,
+        "score": 1012.4317752097493,
+        "training_variance": 5.272059228373566e-06,
         "risk_budget": 5.282468107328534e-06,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -394,6 +807,8 @@
       "SOURCE_M": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 802.4309771077366,
         "training_variance": 3.930561462488233e-06,
         "risk_budget": 3.930561462488233e-06,
@@ -403,6 +818,8 @@
       "ADF_RISK1": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 876.1003827130228,
         "training_variance": 3.3539924237271686e-06,
         "risk_budget": 3.930561462488233e-06,
@@ -412,6 +829,8 @@
       "ADF_RISK2": {
         "pairs": 216,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 910.4412576435479,
         "training_variance": 3.319745778575854e-06,
         "risk_budget": 3.930561462488233e-06,
@@ -421,8 +840,43 @@
       "ADF_RISK3": {
         "pairs": 216,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 937.4021616176524,
         "training_variance": 3.1741396624324064e-06,
+        "risk_budget": 3.930561462488233e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 216,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 957.4719526688641,
+        "training_variance": 3.7807349973679586e-06,
+        "risk_budget": 3.930561462488233e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 216,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 974.9722103719305,
+        "training_variance": 3.892480132393385e-06,
+        "risk_budget": 3.930561462488233e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 216,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 216,
+        "score": 991.7569976982913,
+        "training_variance": 3.8856460558294125e-06,
         "risk_budget": 3.930561462488233e-06,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -432,6 +886,8 @@
       "SOURCE_M": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 806.4066789191228,
         "training_variance": 4.5136073158475435e-06,
         "risk_budget": 4.5136073158475435e-06,
@@ -441,6 +897,8 @@
       "ADF_RISK1": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 880.4903038563632,
         "training_variance": 3.863119855781115e-06,
         "risk_budget": 4.5136073158475435e-06,
@@ -450,6 +908,8 @@
       "ADF_RISK2": {
         "pairs": 216,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 915.2132815978891,
         "training_variance": 3.761518453656716e-06,
         "risk_budget": 4.5136073158475435e-06,
@@ -459,8 +919,43 @@
       "ADF_RISK3": {
         "pairs": 216,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 940.2242335272126,
         "training_variance": 3.820545233506446e-06,
+        "risk_budget": 4.5136073158475435e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 216,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 958.3204688119995,
+        "training_variance": 3.996288038716977e-06,
+        "risk_budget": 4.5136073158475435e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 216,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 974.9795732181054,
+        "training_variance": 3.743616990015356e-06,
+        "risk_budget": 4.5136073158475435e-06,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 216,
+        "max_degree": 9,
+        "degree_limit": null,
+        "effective_solver_cap": 216,
+        "score": 989.7114869372389,
+        "training_variance": 3.7453282273295928e-06,
         "risk_budget": 4.5136073158475435e-06,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -470,6 +965,8 @@
       "SOURCE_M": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 820.9850562338867,
         "training_variance": 4.707983257514496e-06,
         "risk_budget": 4.707983257514496e-06,
@@ -479,6 +976,8 @@
       "ADF_RISK1": {
         "pairs": 216,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 904.8300155591678,
         "training_variance": 3.404385959059722e-06,
         "risk_budget": 4.707983257514496e-06,
@@ -488,6 +987,8 @@
       "ADF_RISK2": {
         "pairs": 216,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 942.4481683396077,
         "training_variance": 3.3730179678171405e-06,
         "risk_budget": 4.707983257514496e-06,
@@ -497,8 +998,43 @@
       "ADF_RISK3": {
         "pairs": 216,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 972.5679807783087,
         "training_variance": 3.2601390296699983e-06,
+        "risk_budget": 4.707983257514496e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 216,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 994.8965969600667,
+        "training_variance": 3.1597108464155173e-06,
+        "risk_budget": 4.707983257514496e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 216,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 1015.9623703848581,
+        "training_variance": 3.199988330428225e-06,
+        "risk_budget": 4.707983257514496e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 216,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 216,
+        "score": 1036.1950052858178,
+        "training_variance": 3.028878199367322e-06,
         "risk_budget": 4.707983257514496e-06,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -508,6 +1044,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 769.076122795309,
         "training_variance": 6.068070016285224e-06,
         "risk_budget": 6.068070016285224e-06,
@@ -517,6 +1055,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 857.6607370998138,
         "training_variance": 5.4204376965485235e-06,
         "risk_budget": 6.068070016285224e-06,
@@ -526,6 +1066,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 895.2674354399445,
         "training_variance": 5.152407305643773e-06,
         "risk_budget": 6.068070016285224e-06,
@@ -535,8 +1077,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 922.6662080915874,
         "training_variance": 4.684489714097384e-06,
+        "risk_budget": 6.068070016285224e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 946.0729763030483,
+        "training_variance": 4.571060321379579e-06,
+        "risk_budget": 6.068070016285224e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 967.3525321552999,
+        "training_variance": 4.4814009157130485e-06,
+        "risk_budget": 6.068070016285224e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 988.6538997618056,
+        "training_variance": 4.5023564614727475e-06,
         "risk_budget": 6.068070016285224e-06,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -546,6 +1123,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 768.1137627378966,
         "training_variance": 1.1452925466992308e-05,
         "risk_budget": 1.1452925466992308e-05,
@@ -555,6 +1134,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 831.748347925899,
         "training_variance": 1.0397881847786727e-05,
         "risk_budget": 1.1452925466992308e-05,
@@ -564,6 +1145,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 865.2083551124854,
         "training_variance": 9.841712220475084e-06,
         "risk_budget": 1.1452925466992308e-05,
@@ -573,8 +1156,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 890.8597803702407,
         "training_variance": 9.89632153343398e-06,
+        "risk_budget": 1.1452925466992308e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 912.3702596381731,
+        "training_variance": 5.708032509268124e-06,
+        "risk_budget": 1.1452925466992308e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 929.4701332136551,
+        "training_variance": 8.076492578874662e-06,
+        "risk_budget": 1.1452925466992308e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 948.0973950354577,
+        "training_variance": 8.612847727492526e-06,
         "risk_budget": 1.1452925466992308e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -584,6 +1202,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 780.415070753362,
         "training_variance": 5.191790263441094e-06,
         "risk_budget": 5.191790263441094e-06,
@@ -593,6 +1213,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 841.7264000762075,
         "training_variance": 5.117630329346783e-06,
         "risk_budget": 5.191790263441094e-06,
@@ -602,6 +1224,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 874.628486880589,
         "training_variance": 4.897360571782723e-06,
         "risk_budget": 5.191790263441094e-06,
@@ -611,8 +1235,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 899.8071283807187,
         "training_variance": 5.013842656426855e-06,
+        "risk_budget": 5.191790263441094e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 919.9830524809507,
+        "training_variance": 5.190004991838372e-06,
+        "risk_budget": 5.191790263441094e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 936.0049336403517,
+        "training_variance": 5.191374001682868e-06,
+        "risk_budget": 5.191790263441094e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 17,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 955.2445481473246,
+        "training_variance": 5.1694159189653e-06,
         "risk_budget": 5.191790263441094e-06,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -622,6 +1281,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 754.7949058111708,
         "training_variance": 7.3342602521969365e-06,
         "risk_budget": 7.3342602521969365e-06,
@@ -631,6 +1292,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 824.2593112576379,
         "training_variance": 7.311425886064804e-06,
         "risk_budget": 7.3342602521969365e-06,
@@ -640,6 +1303,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 858.2849865876506,
         "training_variance": 7.134378265509126e-06,
         "risk_budget": 7.3342602521969365e-06,
@@ -649,8 +1314,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 883.0577077293052,
         "training_variance": 6.486020486777332e-06,
+        "risk_budget": 7.3342602521969365e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 903.421809457236,
+        "training_variance": 6.202374783655656e-06,
+        "risk_budget": 7.3342602521969365e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 919.6249252125156,
+        "training_variance": 5.956139985356256e-06,
+        "risk_budget": 7.3342602521969365e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 16,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 935.38904849424,
+        "training_variance": 6.2253160426411505e-06,
         "risk_budget": 7.3342602521969365e-06,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -660,6 +1360,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 748.4644520555012,
         "training_variance": 1.0833603064952207e-05,
         "risk_budget": 1.0833603064952207e-05,
@@ -669,6 +1371,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 813.0823392608846,
         "training_variance": 1.0664745744854736e-05,
         "risk_budget": 1.0833603064952207e-05,
@@ -678,6 +1382,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 844.818437587576,
         "training_variance": 1.0433113571711693e-05,
         "risk_budget": 1.0833603064952207e-05,
@@ -687,8 +1393,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 867.1361687071048,
         "training_variance": 1.0291523741632061e-05,
+        "risk_budget": 1.0833603064952207e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 885.962231538768,
+        "training_variance": 1.0061636275246096e-05,
+        "risk_budget": 1.0833603064952207e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 901.0286746052589,
+        "training_variance": 9.943683500418005e-06,
+        "risk_budget": 1.0833603064952207e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 16,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 916.3849929210983,
+        "training_variance": 9.795111565043513e-06,
         "risk_budget": 1.0833603064952207e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -698,6 +1439,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 758.2699590940621,
         "training_variance": 8.755498835732094e-06,
         "risk_budget": 8.755498835732094e-06,
@@ -707,6 +1450,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 826.7599886695209,
         "training_variance": 7.932949460067072e-06,
         "risk_budget": 8.755498835732094e-06,
@@ -716,6 +1461,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 859.7737116529336,
         "training_variance": 7.850628781119036e-06,
         "risk_budget": 8.755498835732094e-06,
@@ -725,8 +1472,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 884.3794840611347,
         "training_variance": 7.795878737463336e-06,
+        "risk_budget": 8.755498835732094e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 904.3966293934882,
+        "training_variance": 7.860926926700173e-06,
+        "risk_budget": 8.755498835732094e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 921.7718091468469,
+        "training_variance": 7.813489752397167e-06,
+        "risk_budget": 8.755498835732094e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 17,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 942.7313535251853,
+        "training_variance": 7.763535774288652e-06,
         "risk_budget": 8.755498835732094e-06,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -736,6 +1518,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 772.0590320455151,
         "training_variance": 8.321682218568966e-06,
         "risk_budget": 8.321682218568966e-06,
@@ -745,6 +1529,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 831.623063663528,
         "training_variance": 7.430643703523883e-06,
         "risk_budget": 8.321682218568966e-06,
@@ -754,6 +1540,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 864.7969418062023,
         "training_variance": 7.370346717297143e-06,
         "risk_budget": 8.321682218568966e-06,
@@ -763,8 +1551,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 889.9052331549783,
         "training_variance": 7.453498186554222e-06,
+        "risk_budget": 8.321682218568966e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 911.2340136417404,
+        "training_variance": 7.548758161247531e-06,
+        "risk_budget": 8.321682218568966e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 928.9664945527368,
+        "training_variance": 7.715471668155914e-06,
+        "risk_budget": 8.321682218568966e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 19,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 951.9324553757103,
+        "training_variance": 7.739423860386444e-06,
         "risk_budget": 8.321682218568966e-06,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -774,6 +1597,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 747.5936656329397,
         "training_variance": 7.763273613061819e-06,
         "risk_budget": 7.763273613061819e-06,
@@ -783,6 +1608,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 816.0951643699467,
         "training_variance": 7.680244079069318e-06,
         "risk_budget": 7.763273613061819e-06,
@@ -792,6 +1619,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 847.1606760057209,
         "training_variance": 7.75530885305649e-06,
         "risk_budget": 7.763273613061819e-06,
@@ -801,8 +1630,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 870.7559855554773,
         "training_variance": 7.315943288189402e-06,
+        "risk_budget": 7.763273613061819e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 890.4008200730192,
+        "training_variance": 7.277345211763686e-06,
+        "risk_budget": 7.763273613061819e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 906.3444433308737,
+        "training_variance": 7.396902727365479e-06,
+        "risk_budget": 7.763273613061819e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 929.0596621525433,
+        "training_variance": 7.698212088381118e-06,
         "risk_budget": 7.763273613061819e-06,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -812,6 +1676,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 739.2204455305971,
         "training_variance": 5.3523989410657264e-06,
         "risk_budget": 5.3523989410657264e-06,
@@ -821,6 +1687,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 818.042084926017,
         "training_variance": 5.25798624043947e-06,
         "risk_budget": 5.3523989410657264e-06,
@@ -830,6 +1698,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 849.5161190838571,
         "training_variance": 5.285311555452537e-06,
         "risk_budget": 5.3523989410657264e-06,
@@ -839,8 +1709,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 873.742670006062,
         "training_variance": 5.0853104582720076e-06,
+        "risk_budget": 5.3523989410657264e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 894.4959885602102,
+        "training_variance": 5.1442732917017285e-06,
+        "risk_budget": 5.3523989410657264e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 911.9900470778844,
+        "training_variance": 5.326325291827984e-06,
+        "risk_budget": 5.3523989410657264e-06,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 18,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 932.2497337131879,
+        "training_variance": 5.3522369583808216e-06,
         "risk_budget": 5.3523989410657264e-06,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -850,6 +1755,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 751.8652449638587,
         "training_variance": 1.2950772850264307e-05,
         "risk_budget": 1.2950772850264307e-05,
@@ -859,6 +1766,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 844.84062134109,
         "training_variance": 1.2867814180871024e-05,
         "risk_budget": 1.2950772850264307e-05,
@@ -868,6 +1777,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 881.6731330239063,
         "training_variance": 1.2880890585781286e-05,
         "risk_budget": 1.2950772850264307e-05,
@@ -877,8 +1788,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 910.0544232113244,
         "training_variance": 1.285209052347154e-05,
+        "risk_budget": 1.2950772850264307e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 933.3097837594628,
+        "training_variance": 1.2911773432389732e-05,
+        "risk_budget": 1.2950772850264307e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 953.0561638032593,
+        "training_variance": 1.2908370553034546e-05,
+        "risk_budget": 1.2950772850264307e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 973.1180698433852,
+        "training_variance": 1.2878751896825939e-05,
         "risk_budget": 1.2950772850264307e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -888,6 +1834,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 746.1842239560981,
         "training_variance": 1.321551025044903e-05,
         "risk_budget": 1.321551025044903e-05,
@@ -897,6 +1845,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 808.7236683578009,
         "training_variance": 1.2703347203590213e-05,
         "risk_budget": 1.321551025044903e-05,
@@ -906,6 +1856,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 839.9126119321662,
         "training_variance": 1.2744017640355e-05,
         "risk_budget": 1.321551025044903e-05,
@@ -915,8 +1867,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 863.0426612189066,
         "training_variance": 1.2677835505660831e-05,
+        "risk_budget": 1.321551025044903e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 880.7988660170711,
+        "training_variance": 1.2868709146811686e-05,
+        "risk_budget": 1.321551025044903e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 895.7999678856136,
+        "training_variance": 1.3124498367672849e-05,
+        "risk_budget": 1.321551025044903e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 913.7697983634096,
+        "training_variance": 6.921987607464381e-06,
         "risk_budget": 1.321551025044903e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -926,6 +1913,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 740.1804403427723,
         "training_variance": 1.1752480571882456e-05,
         "risk_budget": 1.1752480571882456e-05,
@@ -935,6 +1924,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 796.356317975361,
         "training_variance": 1.1667361946302059e-05,
         "risk_budget": 1.1752480571882456e-05,
@@ -944,6 +1935,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 828.9587943276924,
         "training_variance": 1.173981107717259e-05,
         "risk_budget": 1.1752480571882456e-05,
@@ -953,8 +1946,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 853.2734756685948,
         "training_variance": 1.1569495505369424e-05,
+        "risk_budget": 1.1752480571882456e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 872.5324972268479,
+        "training_variance": 1.158034952273735e-05,
+        "risk_budget": 1.1752480571882456e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 889.7771549780623,
+        "training_variance": 8.028361540870455e-06,
+        "risk_budget": 1.1752480571882456e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 18,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 906.9860123320877,
+        "training_variance": 8.129600664421867e-06,
         "risk_budget": 1.1752480571882456e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -964,6 +1992,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 749.1058198356325,
         "training_variance": 1.297257806687036e-05,
         "risk_budget": 1.297257806687036e-05,
@@ -973,6 +2003,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 815.1522721868951,
         "training_variance": 1.2176607534187858e-05,
         "risk_budget": 1.297257806687036e-05,
@@ -982,6 +2014,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 844.3746404849558,
         "training_variance": 1.198595036828381e-05,
         "risk_budget": 1.297257806687036e-05,
@@ -991,8 +2025,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 865.5476363012262,
         "training_variance": 1.2807953490200026e-05,
+        "risk_budget": 1.297257806687036e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 883.0968529095622,
+        "training_variance": 1.2896346527045379e-05,
+        "risk_budget": 1.297257806687036e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 897.5475135679974,
+        "training_variance": 1.2958194209206893e-05,
+        "risk_budget": 1.297257806687036e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 910.5647595983519,
+        "training_variance": 1.2841548648514066e-05,
         "risk_budget": 1.297257806687036e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -1002,6 +2071,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 744.0052402318327,
         "training_variance": 1.0608972400411744e-05,
         "risk_budget": 1.0608972400411744e-05,
@@ -1011,6 +2082,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 796.1676298781038,
         "training_variance": 9.063047548189113e-06,
         "risk_budget": 1.0608972400411744e-05,
@@ -1020,6 +2093,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 825.6861489216116,
         "training_variance": 9.147798963383643e-06,
         "risk_budget": 1.0608972400411744e-05,
@@ -1029,8 +2104,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 846.5967846057285,
         "training_variance": 9.139355576125071e-06,
+        "risk_budget": 1.0608972400411744e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 864.3332337457357,
+        "training_variance": 9.332032612211088e-06,
+        "risk_budget": 1.0608972400411744e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 878.7760358808372,
+        "training_variance": 1.0550064746679847e-05,
+        "risk_budget": 1.0608972400411744e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 892.703479273621,
+        "training_variance": 9.784003180068667e-06,
         "risk_budget": 1.0608972400411744e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1040,6 +2150,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 745.2105490710013,
         "training_variance": 1.2867969373722425e-05,
         "risk_budget": 1.2867969373722425e-05,
@@ -1049,6 +2161,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 801.7282029633401,
         "training_variance": 1.0306471160994386e-05,
         "risk_budget": 1.2867969373722425e-05,
@@ -1058,6 +2172,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 830.7047516516084,
         "training_variance": 9.39808922084898e-06,
         "risk_budget": 1.2867969373722425e-05,
@@ -1067,8 +2183,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 854.5553972968975,
         "training_variance": 9.754733580645216e-06,
+        "risk_budget": 1.2867969373722425e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 873.1928513148018,
+        "training_variance": 9.34799785555163e-06,
+        "risk_budget": 1.2867969373722425e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 887.535485747444,
+        "training_variance": 7.2088167510869985e-06,
+        "risk_budget": 1.2867969373722425e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 19,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 904.2085593824736,
+        "training_variance": 7.367043192342516e-06,
         "risk_budget": 1.2867969373722425e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1078,6 +2229,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 752.5567103932603,
         "training_variance": 1.3939275376976093e-05,
         "risk_budget": 1.3939275376976093e-05,
@@ -1087,6 +2240,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 804.3927315188254,
         "training_variance": 1.1668454971269397e-05,
         "risk_budget": 1.3939275376976093e-05,
@@ -1096,6 +2251,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 835.1285587484751,
         "training_variance": 8.320300908128074e-06,
         "risk_budget": 1.3939275376976093e-05,
@@ -1105,8 +2262,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 858.7657675486762,
         "training_variance": 7.6169730423039005e-06,
+        "risk_budget": 1.3939275376976093e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 877.1829118294354,
+        "training_variance": 8.594125915279323e-06,
+        "risk_budget": 1.3939275376976093e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 892.1112514922263,
+        "training_variance": 9.069562649308232e-06,
+        "risk_budget": 1.3939275376976093e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 905.6618580933612,
+        "training_variance": 9.820950903079614e-06,
         "risk_budget": 1.3939275376976093e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1116,6 +2308,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 726.4814723948327,
         "training_variance": 1.1101955698783913e-05,
         "risk_budget": 1.1101955698783913e-05,
@@ -1125,6 +2319,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 798.3936441466144,
         "training_variance": 1.0997306128159519e-05,
         "risk_budget": 1.1101955698783913e-05,
@@ -1134,6 +2330,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 828.6677291079882,
         "training_variance": 9.69201604347298e-06,
         "risk_budget": 1.1101955698783913e-05,
@@ -1143,8 +2341,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 849.6947556949422,
         "training_variance": 1.0067055738280111e-05,
+        "risk_budget": 1.1101955698783913e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 867.6692891834402,
+        "training_variance": 9.957949199059769e-06,
+        "risk_budget": 1.1101955698783913e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 882.7273431577363,
+        "training_variance": 1.0525805346928192e-05,
+        "risk_budget": 1.1101955698783913e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 895.0919469609878,
+        "training_variance": 1.0907376561849128e-05,
         "risk_budget": 1.1101955698783913e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -1154,6 +2387,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 735.892164053506,
         "training_variance": 1.649772342318772e-05,
         "risk_budget": 1.649772342318772e-05,
@@ -1163,6 +2398,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 794.677747325992,
         "training_variance": 1.4731295819625436e-05,
         "risk_budget": 1.649772342318772e-05,
@@ -1172,6 +2409,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 825.840058392683,
         "training_variance": 1.4384989503845963e-05,
         "risk_budget": 1.649772342318772e-05,
@@ -1181,8 +2420,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 848.8829935660519,
         "training_variance": 1.5300541608163218e-05,
+        "risk_budget": 1.649772342318772e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 866.9238965676316,
+        "training_variance": 1.5353376175319617e-05,
+        "risk_budget": 1.649772342318772e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 881.1369294941506,
+        "training_variance": 1.2288106263312294e-05,
+        "risk_budget": 1.649772342318772e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 893.6811908996065,
+        "training_variance": 1.4989194981001226e-05,
         "risk_budget": 1.649772342318772e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1192,6 +2466,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 742.3702594294821,
         "training_variance": 1.3425109237110447e-05,
         "risk_budget": 1.3425109237110447e-05,
@@ -1201,6 +2477,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 807.3394399244842,
         "training_variance": 1.2783463959989842e-05,
         "risk_budget": 1.3425109237110447e-05,
@@ -1210,6 +2488,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 838.8536717291497,
         "training_variance": 1.3239335746377804e-05,
         "risk_budget": 1.3425109237110447e-05,
@@ -1219,8 +2499,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 859.4392671749176,
         "training_variance": 1.3184062217443233e-05,
+        "risk_budget": 1.3425109237110447e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 876.057023429928,
+        "training_variance": 1.3151136083320253e-05,
+        "risk_budget": 1.3425109237110447e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 889.5335688633445,
+        "training_variance": 1.2608018695106078e-05,
+        "risk_budget": 1.3425109237110447e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 901.4742057375238,
+        "training_variance": 1.0406009882473163e-05,
         "risk_budget": 1.3425109237110447e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1230,6 +2545,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 725.5947614618526,
         "training_variance": 1.3646837306746137e-05,
         "risk_budget": 1.3646837306746137e-05,
@@ -1239,6 +2556,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 800.9073513534939,
         "training_variance": 1.1928378522212057e-05,
         "risk_budget": 1.3646837306746137e-05,
@@ -1248,6 +2567,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 830.8551813010741,
         "training_variance": 1.1488606829612893e-05,
         "risk_budget": 1.3646837306746137e-05,
@@ -1257,8 +2578,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 852.2717791954343,
         "training_variance": 1.1773062815147354e-05,
+        "risk_budget": 1.3646837306746137e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 869.9671354825691,
+        "training_variance": 1.1893932865467837e-05,
+        "risk_budget": 1.3646837306746137e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 885.3087986280493,
+        "training_variance": 1.2744274982728277e-05,
+        "risk_budget": 1.3646837306746137e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 900.7102075712826,
+        "training_variance": 1.3310955585168397e-05,
         "risk_budget": 1.3646837306746137e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -1268,6 +2624,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 761.2335877075898,
         "training_variance": 1.132347434808782e-05,
         "risk_budget": 1.132347434808782e-05,
@@ -1277,6 +2635,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 817.7691853431436,
         "training_variance": 1.1051757807200202e-05,
         "risk_budget": 1.132347434808782e-05,
@@ -1286,6 +2646,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 845.5847391536729,
         "training_variance": 1.0930715060644953e-05,
         "risk_budget": 1.132347434808782e-05,
@@ -1295,8 +2657,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 866.9255016926127,
         "training_variance": 1.1286777458848067e-05,
+        "risk_budget": 1.132347434808782e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 883.1301499468833,
+        "training_variance": 1.126821333003577e-05,
+        "risk_budget": 1.132347434808782e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 896.3862665877232,
+        "training_variance": 1.1316982057832873e-05,
+        "risk_budget": 1.132347434808782e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 909.2149462083038,
+        "training_variance": 1.125574575546982e-05,
         "risk_budget": 1.132347434808782e-05,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -1306,6 +2703,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 736.9033303284493,
         "training_variance": 1.6019874266729416e-05,
         "risk_budget": 1.6019874266729416e-05,
@@ -1315,6 +2714,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 809.9990150321655,
         "training_variance": 1.4045915805369378e-05,
         "risk_budget": 1.6019874266729416e-05,
@@ -1324,6 +2725,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 839.5566702301246,
         "training_variance": 1.351809830923058e-05,
         "risk_budget": 1.6019874266729416e-05,
@@ -1333,8 +2736,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 860.0467772808383,
         "training_variance": 1.394271669694966e-05,
+        "risk_budget": 1.6019874266729416e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 876.4245108626844,
+        "training_variance": 1.3612164669804298e-05,
+        "risk_budget": 1.6019874266729416e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 891.1596949779271,
+        "training_variance": 1.3384569551811591e-05,
+        "risk_budget": 1.6019874266729416e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 8,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 903.0386459719789,
+        "training_variance": 1.311787092838931e-05,
         "risk_budget": 1.6019874266729416e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -1344,6 +2782,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 754.3184036909144,
         "training_variance": 1.3642992141717134e-05,
         "risk_budget": 1.3642992141717134e-05,
@@ -1353,6 +2793,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 814.8027283365835,
         "training_variance": 1.3516098847609975e-05,
         "risk_budget": 1.3642992141717134e-05,
@@ -1362,6 +2804,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 844.3986102932076,
         "training_variance": 1.2590404267674768e-05,
         "risk_budget": 1.3642992141717134e-05,
@@ -1371,8 +2815,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 866.1388825050163,
         "training_variance": 1.1830740091767642e-05,
+        "risk_budget": 1.3642992141717134e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 883.7234394287459,
+        "training_variance": 1.0561985221255042e-05,
+        "risk_budget": 1.3642992141717134e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 898.3603402733681,
+        "training_variance": 1.0454022377805958e-05,
+        "risk_budget": 1.3642992141717134e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 910.8651545870423,
+        "training_variance": 1.1316879579083942e-05,
         "risk_budget": 1.3642992141717134e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1382,6 +2861,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 763.3774414237864,
         "training_variance": 7.592228968551118e-06,
         "risk_budget": 7.592228968551118e-06,
@@ -1391,6 +2872,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 871.5841450116523,
         "training_variance": 7.5341840288524886e-06,
         "risk_budget": 7.592228968551118e-06,
@@ -1400,6 +2883,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 939.0397843392211,
         "training_variance": 7.533205435895493e-06,
         "risk_budget": 7.592228968551118e-06,
@@ -1409,8 +2894,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 998.7248372078216,
         "training_variance": 7.426616251345256e-06,
+        "risk_budget": 7.592228968551118e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 1050.053255637102,
+        "training_variance": 7.1895155907453775e-06,
+        "risk_budget": 7.592228968551118e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 1094.1633286730946,
+        "training_variance": 7.549009078385722e-06,
+        "risk_budget": 7.592228968551118e-06,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 19,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 1358.1581139168734,
+        "training_variance": 7.2384326518921256e-06,
         "risk_budget": 7.592228968551118e-06,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1420,6 +2940,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 778.5684982299824,
         "training_variance": 7.21075153521057e-06,
         "risk_budget": 7.21075153521057e-06,
@@ -1429,6 +2951,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 835.9253661262105,
         "training_variance": 6.511837305461149e-06,
         "risk_budget": 7.21075153521057e-06,
@@ -1438,6 +2962,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 866.2362397537763,
         "training_variance": 6.459786535863637e-06,
         "risk_budget": 7.21075153521057e-06,
@@ -1447,8 +2973,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 888.8609617560371,
         "training_variance": 6.518055352043129e-06,
+        "risk_budget": 7.21075153521057e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 906.6537309501916,
+        "training_variance": 6.925263054419433e-06,
+        "risk_budget": 7.21075153521057e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 921.904842073554,
+        "training_variance": 7.0824392694033395e-06,
+        "risk_budget": 7.21075153521057e-06,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 937.3877758022288,
+        "training_variance": 7.001139208719901e-06,
         "risk_budget": 7.21075153521057e-06,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -1458,6 +3019,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 754.407376938532,
         "training_variance": 7.451413260113983e-06,
         "risk_budget": 7.451413260113983e-06,
@@ -1467,6 +3030,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 816.1235559872398,
         "training_variance": 7.443826749693661e-06,
         "risk_budget": 7.451413260113983e-06,
@@ -1476,6 +3041,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 846.5575034193051,
         "training_variance": 7.407799285297906e-06,
         "risk_budget": 7.451413260113983e-06,
@@ -1485,8 +3052,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 870.4149203831251,
         "training_variance": 6.945493879725989e-06,
+        "risk_budget": 7.451413260113983e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 889.5239800495336,
+        "training_variance": 7.099138722969099e-06,
+        "risk_budget": 7.451413260113983e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 905.3945874752385,
+        "training_variance": 7.2180053979578e-06,
+        "risk_budget": 7.451413260113983e-06,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 919.487315287661,
+        "training_variance": 5.626239807630119e-06,
         "risk_budget": 7.451413260113983e-06,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1496,6 +3098,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 742.4047824608133,
         "training_variance": 2.3411235170393304e-05,
         "risk_budget": 2.3411235170393304e-05,
@@ -1505,6 +3109,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 814.4604398968352,
         "training_variance": 2.3358022237470538e-05,
         "risk_budget": 2.3411235170393304e-05,
@@ -1514,6 +3120,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 849.4785340242097,
         "training_variance": 2.139524731884988e-05,
         "risk_budget": 2.3411235170393304e-05,
@@ -1523,8 +3131,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 875.7686900658291,
         "training_variance": 2.06059467275471e-05,
+        "risk_budget": 2.3411235170393304e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 896.4750660164914,
+        "training_variance": 1.9975213598688244e-05,
+        "risk_budget": 2.3411235170393304e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 914.3535010613111,
+        "training_variance": 1.915976656234162e-05,
+        "risk_budget": 2.3411235170393304e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 930.8100915544823,
+        "training_variance": 1.9362443576985095e-05,
         "risk_budget": 2.3411235170393304e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1534,6 +3177,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 740.4577985632136,
         "training_variance": 4.3049595880748614e-05,
         "risk_budget": 4.3049595880748614e-05,
@@ -1543,6 +3188,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 835.508408769126,
         "training_variance": 2.8684074822166734e-05,
         "risk_budget": 4.3049595880748614e-05,
@@ -1552,6 +3199,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 865.531279276843,
         "training_variance": 2.4678092131335814e-05,
         "risk_budget": 4.3049595880748614e-05,
@@ -1561,8 +3210,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 888.263004915162,
         "training_variance": 2.4429233871050553e-05,
+        "risk_budget": 4.3049595880748614e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 906.5460891354535,
+        "training_variance": 2.6544510150022986e-05,
+        "risk_budget": 4.3049595880748614e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 922.2962842214589,
+        "training_variance": 2.8503911548312697e-05,
+        "risk_budget": 4.3049595880748614e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 8,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 935.0292742604298,
+        "training_variance": 2.811713546133729e-05,
         "risk_budget": 4.3049595880748614e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -1572,6 +3256,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 749.391753514725,
         "training_variance": 3.978148596255924e-05,
         "risk_budget": 3.978148596255924e-05,
@@ -1581,6 +3267,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 833.7661648207268,
         "training_variance": 3.9556672606825486e-05,
         "risk_budget": 3.978148596255924e-05,
@@ -1590,6 +3278,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 865.0963131475646,
         "training_variance": 3.912513158711632e-05,
         "risk_budget": 3.978148596255924e-05,
@@ -1599,8 +3289,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 888.2049243917597,
         "training_variance": 3.6720061722770694e-05,
+        "risk_budget": 3.978148596255924e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 906.3799623598545,
+        "training_variance": 3.2954525232247584e-05,
+        "risk_budget": 3.978148596255924e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 920.9655948631241,
+        "training_variance": 3.1888697557828696e-05,
+        "risk_budget": 3.978148596255924e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 7,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 932.5247815767108,
+        "training_variance": 2.6413477535680872e-05,
         "risk_budget": 3.978148596255924e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1610,6 +3335,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 752.8523263168984,
         "training_variance": 9.809428850130797e-05,
         "risk_budget": 9.809428850130797e-05,
@@ -1619,6 +3346,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 842.3897789150674,
         "training_variance": 9.314621038656547e-05,
         "risk_budget": 9.809428850130797e-05,
@@ -1628,6 +3357,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 873.01715093847,
         "training_variance": 8.433851696397596e-05,
         "risk_budget": 9.809428850130797e-05,
@@ -1637,8 +3368,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 892.726255383469,
         "training_variance": 7.121834972994941e-05,
+        "risk_budget": 9.809428850130797e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 908.7244673188102,
+        "training_variance": 7.149664354970941e-05,
+        "risk_budget": 9.809428850130797e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 921.7924510865769,
+        "training_variance": 6.612037574446623e-05,
+        "risk_budget": 9.809428850130797e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 7,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 932.4185589870146,
+        "training_variance": 6.34473847587248e-05,
         "risk_budget": 9.809428850130797e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1648,6 +3414,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 748.2716408485836,
         "training_variance": 4.8232043233786195e-05,
         "risk_budget": 4.8232043233786195e-05,
@@ -1657,6 +3425,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 835.1254729201571,
         "training_variance": 2.5427031145603294e-05,
         "risk_budget": 4.8232043233786195e-05,
@@ -1666,6 +3436,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 865.2609731254053,
         "training_variance": 2.2731629618630954e-05,
         "risk_budget": 4.8232043233786195e-05,
@@ -1675,8 +3447,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 887.4024357101349,
         "training_variance": 2.269938547710361e-05,
+        "risk_budget": 4.8232043233786195e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 904.8680536335071,
+        "training_variance": 2.2767144392797758e-05,
+        "risk_budget": 4.8232043233786195e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 918.48852504537,
+        "training_variance": 2.246597669127732e-05,
+        "risk_budget": 4.8232043233786195e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 9,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 929.1740442436978,
+        "training_variance": 2.4408839984512337e-05,
         "risk_budget": 4.8232043233786195e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1686,6 +3493,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 743.7107739712641,
         "training_variance": 4.918786757424863e-05,
         "risk_budget": 4.918786757424863e-05,
@@ -1695,6 +3504,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 824.0385330187416,
         "training_variance": 4.4305329844194564e-05,
         "risk_budget": 4.918786757424863e-05,
@@ -1704,6 +3515,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 856.7775625638981,
         "training_variance": 4.1325100708541266e-05,
         "risk_budget": 4.918786757424863e-05,
@@ -1713,8 +3526,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 881.3721699637636,
         "training_variance": 3.6877873728634405e-05,
+        "risk_budget": 4.918786757424863e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 900.8900872819625,
+        "training_variance": 3.650441977748429e-05,
+        "risk_budget": 4.918786757424863e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 916.8232285920219,
+        "training_variance": 3.5393155946106314e-05,
+        "risk_budget": 4.918786757424863e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 6,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 929.5798944886556,
+        "training_variance": 3.05754377795838e-05,
         "risk_budget": 4.918786757424863e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1724,6 +3572,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 787.8622107980129,
         "training_variance": 3.870129569777347e-05,
         "risk_budget": 3.870129569777347e-05,
@@ -1733,6 +3583,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 853.6544323981342,
         "training_variance": 3.230724742174604e-05,
         "risk_budget": 3.870129569777347e-05,
@@ -1742,6 +3594,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 891.1687847285143,
         "training_variance": 3.132117887031759e-05,
         "risk_budget": 3.870129569777347e-05,
@@ -1751,8 +3605,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 916.1238993836541,
         "training_variance": 2.765481306757404e-05,
+        "risk_budget": 3.870129569777347e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 936.2081410309412,
+        "training_variance": 2.6169698533351082e-05,
+        "risk_budget": 3.870129569777347e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 952.1416514936822,
+        "training_variance": 2.6486143740981286e-05,
+        "risk_budget": 3.870129569777347e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 8,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 964.4169252328647,
+        "training_variance": 2.862994551912569e-05,
         "risk_budget": 3.870129569777347e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1762,6 +3651,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 767.7160746956165,
         "training_variance": 6.124811043586226e-05,
         "risk_budget": 6.124811043586226e-05,
@@ -1771,6 +3662,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 843.6019238767445,
         "training_variance": 3.1588723606714393e-05,
         "risk_budget": 6.124811043586226e-05,
@@ -1780,6 +3673,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 878.0642004049678,
         "training_variance": 3.0211247568259037e-05,
         "risk_budget": 6.124811043586226e-05,
@@ -1789,8 +3684,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 902.8702039725013,
         "training_variance": 2.4525460918449027e-05,
+        "risk_budget": 6.124811043586226e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 921.957111015892,
+        "training_variance": 2.4695339852769248e-05,
+        "risk_budget": 6.124811043586226e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 937.5953278559889,
+        "training_variance": 2.6194994394325817e-05,
+        "risk_budget": 6.124811043586226e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 952.7506685162464,
+        "training_variance": 3.8446538430429424e-05,
         "risk_budget": 6.124811043586226e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -1800,6 +3730,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 746.7364100406475,
         "training_variance": 3.54665055621407e-05,
         "risk_budget": 3.54665055621407e-05,
@@ -1809,6 +3741,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 846.6097393946209,
         "training_variance": 3.2920970642095816e-05,
         "risk_budget": 3.54665055621407e-05,
@@ -1818,6 +3752,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 881.8243684887645,
         "training_variance": 2.7142295594166774e-05,
         "risk_budget": 3.54665055621407e-05,
@@ -1827,8 +3763,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 907.5443246370182,
         "training_variance": 3.088256522236912e-05,
+        "risk_budget": 3.54665055621407e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 926.8852581191113,
+        "training_variance": 3.082145197037292e-05,
+        "risk_budget": 3.54665055621407e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 941.9975533302244,
+        "training_variance": 3.3129687906363255e-05,
+        "risk_budget": 3.54665055621407e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 955.3134608893383,
+        "training_variance": 3.533185231605766e-05,
         "risk_budget": 3.54665055621407e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -1838,6 +3809,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 756.7845850026513,
         "training_variance": 5.490052307560785e-05,
         "risk_budget": 5.490052307560785e-05,
@@ -1847,6 +3820,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 839.2065300996835,
         "training_variance": 5.286602231546038e-05,
         "risk_budget": 5.490052307560785e-05,
@@ -1856,6 +3831,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 870.8929765987125,
         "training_variance": 5.0527536008643936e-05,
         "risk_budget": 5.490052307560785e-05,
@@ -1865,8 +3842,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 894.3541502329352,
         "training_variance": 5.013568592484101e-05,
+        "risk_budget": 5.490052307560785e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 912.6107125144272,
+        "training_variance": 5.0200343237580414e-05,
+        "risk_budget": 5.490052307560785e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 927.9008816653488,
+        "training_variance": 4.2878346116976725e-05,
+        "risk_budget": 5.490052307560785e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 21,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 947.8725155309953,
+        "training_variance": 4.4338066805581664e-05,
         "risk_budget": 5.490052307560785e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -1876,6 +3888,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 758.5666787922141,
         "training_variance": 3.572052048451286e-05,
         "risk_budget": 3.572052048451286e-05,
@@ -1885,6 +3899,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 842.9025660496372,
         "training_variance": 3.571469950880416e-05,
         "risk_budget": 3.572052048451286e-05,
@@ -1894,6 +3910,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 876.4053529976832,
         "training_variance": 3.334643177557782e-05,
         "risk_budget": 3.572052048451286e-05,
@@ -1903,8 +3921,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 899.5485866571652,
         "training_variance": 3.208552079155253e-05,
+        "risk_budget": 3.572052048451286e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 918.5196828702807,
+        "training_variance": 3.0329857780666792e-05,
+        "risk_budget": 3.572052048451286e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 933.1400833733926,
+        "training_variance": 3.500753053661367e-05,
+        "risk_budget": 3.572052048451286e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 949.556869585129,
+        "training_variance": 3.531907777431934e-05,
         "risk_budget": 3.572052048451286e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -1914,6 +3967,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 762.6558325717766,
         "training_variance": 4.2385327312095716e-05,
         "risk_budget": 4.2385327312095716e-05,
@@ -1923,6 +3978,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 839.1314225434312,
         "training_variance": 4.169621039915277e-05,
         "risk_budget": 4.2385327312095716e-05,
@@ -1932,6 +3989,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 870.2013571819992,
         "training_variance": 4.139307871847244e-05,
         "risk_budget": 4.2385327312095716e-05,
@@ -1941,8 +4000,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 893.2734200882483,
         "training_variance": 4.061602590280756e-05,
+        "risk_budget": 4.2385327312095716e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 911.9610504132417,
+        "training_variance": 4.181523109049616e-05,
+        "risk_budget": 4.2385327312095716e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 927.408543552388,
+        "training_variance": 4.220454776643419e-05,
+        "risk_budget": 4.2385327312095716e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 19,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 944.3961613723982,
+        "training_variance": 3.9677061217464386e-05,
         "risk_budget": 4.2385327312095716e-05,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -1952,6 +4046,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 772.9832596547609,
         "training_variance": 1.3427003134669696e-05,
         "risk_budget": 1.3427003134669696e-05,
@@ -1961,6 +4057,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 860.8296153659592,
         "training_variance": 1.3383072849248163e-05,
         "risk_budget": 1.3427003134669696e-05,
@@ -1970,6 +4068,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 891.6167823382046,
         "training_variance": 1.3167494604549667e-05,
         "risk_budget": 1.3427003134669696e-05,
@@ -1979,8 +4079,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 918.4033088854649,
         "training_variance": 1.339827559029268e-05,
+        "risk_budget": 1.3427003134669696e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 939.9135634883035,
+        "training_variance": 1.3407326197942561e-05,
+        "risk_budget": 1.3427003134669696e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 956.7869417725828,
+        "training_variance": 1.3229866123095557e-05,
+        "risk_budget": 1.3427003134669696e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 972.9845148121547,
+        "training_variance": 1.3414636359027863e-05,
         "risk_budget": 1.3427003134669696e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -1990,6 +4125,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 767.7343574089701,
         "training_variance": 1.4291639154474277e-05,
         "risk_budget": 1.4291639154474277e-05,
@@ -1999,6 +4136,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 859.8699301442175,
         "training_variance": 1.0970350375543969e-05,
         "risk_budget": 1.4291639154474277e-05,
@@ -2008,6 +4147,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 894.719775731839,
         "training_variance": 1.0420860556446776e-05,
         "risk_budget": 1.4291639154474277e-05,
@@ -2017,8 +4158,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 919.8917967250318,
         "training_variance": 1.1136221333874564e-05,
+        "risk_budget": 1.4291639154474277e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 941.6172988183695,
+        "training_variance": 1.1432656300881581e-05,
+        "risk_budget": 1.4291639154474277e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 959.330998513881,
+        "training_variance": 1.1684021818273288e-05,
+        "risk_budget": 1.4291639154474277e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 974.6009499124978,
+        "training_variance": 1.2413939545380291e-05,
         "risk_budget": 1.4291639154474277e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -2028,6 +4204,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 753.8372143301185,
         "training_variance": 1.7963262622982874e-05,
         "risk_budget": 1.7963262622982874e-05,
@@ -2037,6 +4215,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 853.4512826617463,
         "training_variance": 1.0599063224811469e-05,
         "risk_budget": 1.7963262622982874e-05,
@@ -2046,6 +4226,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 887.9501174438969,
         "training_variance": 1.1104931783874963e-05,
         "risk_budget": 1.7963262622982874e-05,
@@ -2055,8 +4237,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 912.4565687927693,
         "training_variance": 1.1106782760475729e-05,
+        "risk_budget": 1.7963262622982874e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 931.7859309147227,
+        "training_variance": 1.0947025175272769e-05,
+        "risk_budget": 1.7963262622982874e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 947.2912784165051,
+        "training_variance": 1.1474052895487614e-05,
+        "risk_budget": 1.7963262622982874e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 963.0850317977579,
+        "training_variance": 1.2054827440282375e-05,
         "risk_budget": 1.7963262622982874e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -2066,6 +4283,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 781.4698096475363,
         "training_variance": 1.2283128869617205e-05,
         "risk_budget": 1.2283128869617205e-05,
@@ -2075,6 +4294,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 872.3819746290378,
         "training_variance": 8.84941801985385e-06,
         "risk_budget": 1.2283128869617205e-05,
@@ -2084,6 +4305,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 903.690724363409,
         "training_variance": 9.163813516546649e-06,
         "risk_budget": 1.2283128869617205e-05,
@@ -2093,8 +4316,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 928.0143399443416,
         "training_variance": 9.126422044521105e-06,
+        "risk_budget": 1.2283128869617205e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 947.6005961302992,
+        "training_variance": 9.157308942186465e-06,
+        "risk_budget": 1.2283128869617205e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 963.5299062142747,
+        "training_variance": 9.545423939040427e-06,
+        "risk_budget": 1.2283128869617205e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 979.7311086245817,
+        "training_variance": 9.574048465145617e-06,
         "risk_budget": 1.2283128869617205e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2104,6 +4362,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 791.0808352404233,
         "training_variance": 1.2551112532389994e-05,
         "risk_budget": 1.2551112532389994e-05,
@@ -2113,6 +4373,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 866.6908003567012,
         "training_variance": 1.184852588104818e-05,
         "risk_budget": 1.2551112532389994e-05,
@@ -2122,6 +4384,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 903.0722025197246,
         "training_variance": 1.1233964768049049e-05,
         "risk_budget": 1.2551112532389994e-05,
@@ -2131,8 +4395,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 928.7149569591584,
         "training_variance": 1.0843701879818152e-05,
+        "risk_budget": 1.2551112532389994e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 948.6880597235734,
+        "training_variance": 1.1097422454415663e-05,
+        "risk_budget": 1.2551112532389994e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 966.270120251025,
+        "training_variance": 1.1370107365008315e-05,
+        "risk_budget": 1.2551112532389994e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 985.699626793411,
+        "training_variance": 1.2542569300232506e-05,
         "risk_budget": 1.2551112532389994e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -2142,6 +4441,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 771.5576099841948,
         "training_variance": 1.1817692195984596e-05,
         "risk_budget": 1.1817692195984596e-05,
@@ -2151,6 +4452,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 856.6895017043315,
         "training_variance": 1.1470466432319936e-05,
         "risk_budget": 1.1817692195984596e-05,
@@ -2160,6 +4463,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 888.7124364194726,
         "training_variance": 1.1785912234903244e-05,
         "risk_budget": 1.1817692195984596e-05,
@@ -2169,8 +4474,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 914.8278282185345,
         "training_variance": 1.1558389706584049e-05,
+        "risk_budget": 1.1817692195984596e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 935.0104709010008,
+        "training_variance": 1.1808791172021809e-05,
+        "risk_budget": 1.1817692195984596e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 952.3671925613487,
+        "training_variance": 1.1811014726883205e-05,
+        "risk_budget": 1.1817692195984596e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 17,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 973.7810452611957,
+        "training_variance": 1.1795462252844512e-05,
         "risk_budget": 1.1817692195984596e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2180,6 +4520,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 791.5958919292711,
         "training_variance": 1.1311974295170887e-05,
         "risk_budget": 1.1311974295170887e-05,
@@ -2189,6 +4531,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 866.7930578317478,
         "training_variance": 9.692516931785295e-06,
         "risk_budget": 1.1311974295170887e-05,
@@ -2198,6 +4542,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 901.6654852963635,
         "training_variance": 9.723074865930853e-06,
         "risk_budget": 1.1311974295170887e-05,
@@ -2207,8 +4553,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 928.1696686438505,
         "training_variance": 9.94481061791357e-06,
+        "risk_budget": 1.1311974295170887e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 949.4805093938667,
+        "training_variance": 1.0006317643856509e-05,
+        "risk_budget": 1.1311974295170887e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 967.7735034125658,
+        "training_variance": 1.0817071651863603e-05,
+        "risk_budget": 1.1311974295170887e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 989.8971321688844,
+        "training_variance": 1.1297403318786313e-05,
         "risk_budget": 1.1311974295170887e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2218,6 +4599,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 785.2130008207187,
         "training_variance": 1.092924273721326e-05,
         "risk_budget": 1.092924273721326e-05,
@@ -2227,6 +4610,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 859.6063804078873,
         "training_variance": 1.0625132549455523e-05,
         "risk_budget": 1.092924273721326e-05,
@@ -2236,6 +4621,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 892.4599413501666,
         "training_variance": 1.0080787093223904e-05,
         "risk_budget": 1.092924273721326e-05,
@@ -2245,8 +4632,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 918.43879595528,
         "training_variance": 1.0288141823778787e-05,
+        "risk_budget": 1.092924273721326e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 939.6200724519634,
+        "training_variance": 1.0638877483754133e-05,
+        "risk_budget": 1.092924273721326e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 957.3240301148055,
+        "training_variance": 1.0927403600910595e-05,
+        "risk_budget": 1.092924273721326e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 977.6978200439562,
+        "training_variance": 1.0918539632989475e-05,
         "risk_budget": 1.092924273721326e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2256,6 +4678,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 796.6676050560629,
         "training_variance": 1.2748772042125268e-05,
         "risk_budget": 1.2748772042125268e-05,
@@ -2265,6 +4689,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 861.0089385478071,
         "training_variance": 1.2210175443359805e-05,
         "risk_budget": 1.2748772042125268e-05,
@@ -2274,6 +4700,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 895.1373051115531,
         "training_variance": 1.266040040555397e-05,
         "risk_budget": 1.2748772042125268e-05,
@@ -2283,8 +4711,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 920.3428728469299,
         "training_variance": 1.2720923748481311e-05,
+        "risk_budget": 1.2748772042125268e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 940.0669472484292,
+        "training_variance": 1.272860742493446e-05,
+        "risk_budget": 1.2748772042125268e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 956.6504429605152,
+        "training_variance": 1.2717192684783912e-05,
+        "risk_budget": 1.2748772042125268e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 980.4556885896411,
+        "training_variance": 1.2733023997313356e-05,
         "risk_budget": 1.2748772042125268e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
@@ -2294,6 +4757,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 809.5251853491588,
         "training_variance": 1.480078107529297e-05,
         "risk_budget": 1.480078107529297e-05,
@@ -2303,6 +4768,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 885.1856826690007,
         "training_variance": 1.457305256271241e-05,
         "risk_budget": 1.480078107529297e-05,
@@ -2312,6 +4779,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 922.1267317306156,
         "training_variance": 1.422328895131818e-05,
         "risk_budget": 1.480078107529297e-05,
@@ -2321,8 +4790,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 949.3243961066928,
         "training_variance": 1.4797383370575232e-05,
+        "risk_budget": 1.480078107529297e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 970.1061018676304,
+        "training_variance": 1.473466306176179e-05,
+        "risk_budget": 1.480078107529297e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 988.4043236928868,
+        "training_variance": 1.4789061173108493e-05,
+        "risk_budget": 1.480078107529297e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 8,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 995.0532929062833,
+        "training_variance": 1.4799850797157735e-05,
         "risk_budget": 1.480078107529297e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -2332,6 +4836,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 850.4738541577864,
         "training_variance": 1.2071083930423697e-05,
         "risk_budget": 1.2071083930423697e-05,
@@ -2341,6 +4847,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 951.2409315756342,
         "training_variance": 1.0588538643977152e-05,
         "risk_budget": 1.2071083930423697e-05,
@@ -2350,6 +4858,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 992.4224648281242,
         "training_variance": 1.0821269240579539e-05,
         "risk_budget": 1.2071083930423697e-05,
@@ -2359,8 +4869,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 1026.7727160107293,
         "training_variance": 1.1030280161607915e-05,
+        "risk_budget": 1.2071083930423697e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 1058.9647094508127,
+        "training_variance": 1.1498569475622877e-05,
+        "risk_budget": 1.2071083930423697e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 1086.9120707896734,
+        "training_variance": 1.2057631541762745e-05,
+        "risk_budget": 1.2071083930423697e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 15,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 1114.1475141835645,
+        "training_variance": 1.2059748776395533e-05,
         "risk_budget": 1.2071083930423697e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -2370,6 +4915,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 872.347404370835,
         "training_variance": 1.2370598854579105e-05,
         "risk_budget": 1.2370598854579105e-05,
@@ -2379,6 +4926,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 993.2240200976765,
         "training_variance": 1.0505396914136434e-05,
         "risk_budget": 1.2370598854579105e-05,
@@ -2388,6 +4937,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 1044.6544006173926,
         "training_variance": 1.0637715812331463e-05,
         "risk_budget": 1.2370598854579105e-05,
@@ -2397,8 +4948,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 1082.1459929720934,
         "training_variance": 1.087940279499112e-05,
+        "risk_budget": 1.2370598854579105e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 1114.0567998908364,
+        "training_variance": 1.1162712131968541e-05,
+        "risk_budget": 1.2370598854579105e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 1142.3425645534999,
+        "training_variance": 1.2209845021423809e-05,
+        "risk_budget": 1.2370598854579105e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 1168.1593594338183,
+        "training_variance": 1.2367514945076037e-05,
         "risk_budget": 1.2370598854579105e-05,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -2408,6 +4994,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 807.9192019985085,
         "training_variance": 1.2142811849663754e-05,
         "risk_budget": 1.2142811849663754e-05,
@@ -2417,6 +5005,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 903.2520690291915,
         "training_variance": 1.1373065860803008e-05,
         "risk_budget": 1.2142811849663754e-05,
@@ -2426,6 +5016,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 945.5083317443158,
         "training_variance": 1.1321113580355384e-05,
         "risk_budget": 1.2142811849663754e-05,
@@ -2435,8 +5027,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 980.914577026274,
         "training_variance": 1.0867292737021292e-05,
+        "risk_budget": 1.2142811849663754e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 1010.2456589495513,
+        "training_variance": 1.0711706601287113e-05,
+        "risk_budget": 1.2142811849663754e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 1035.8436292611252,
+        "training_variance": 1.1016559183533535e-05,
+        "risk_budget": 1.2142811849663754e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 1066.292933033058,
+        "training_variance": 1.1901064998109176e-05,
         "risk_budget": 1.2142811849663754e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -2446,6 +5073,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 775.3035776956885,
         "training_variance": 1.0445804105527708e-05,
         "risk_budget": 1.0445804105527708e-05,
@@ -2455,6 +5084,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 842.2537494158616,
         "training_variance": 1.0210258944959388e-05,
         "risk_budget": 1.0445804105527708e-05,
@@ -2464,6 +5095,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 877.5865980595167,
         "training_variance": 1.0436172828064365e-05,
         "risk_budget": 1.0445804105527708e-05,
@@ -2473,8 +5106,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 902.6647402353333,
         "training_variance": 1.0435099109303625e-05,
+        "risk_budget": 1.0445804105527708e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 922.0608530396651,
+        "training_variance": 1.0445386225040418e-05,
+        "risk_budget": 1.0445804105527708e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 938.3446304400854,
+        "training_variance": 1.044243960299121e-05,
+        "risk_budget": 1.0445804105527708e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 954.6019766374669,
+        "training_variance": 1.04412717306064e-05,
         "risk_budget": 1.0445804105527708e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2484,6 +5152,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 766.3935266125768,
         "training_variance": 1.2823819878761927e-05,
         "risk_budget": 1.2823819878761927e-05,
@@ -2493,6 +5163,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 836.702917529964,
         "training_variance": 1.1713332866779912e-05,
         "risk_budget": 1.2823819878761927e-05,
@@ -2502,6 +5174,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 869.784800435044,
         "training_variance": 1.2330219201668632e-05,
         "risk_budget": 1.2823819878761927e-05,
@@ -2511,8 +5185,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 893.8636604415892,
         "training_variance": 1.1428541319923805e-05,
+        "risk_budget": 1.2823819878761927e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 914.4797575603361,
+        "training_variance": 1.2432122856918648e-05,
+        "risk_budget": 1.2823819878761927e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 931.6848392405147,
+        "training_variance": 1.2575581995068906e-05,
+        "risk_budget": 1.2823819878761927e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 9,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 946.2992823439628,
+        "training_variance": 1.281017411962019e-05,
         "risk_budget": 1.2823819878761927e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2522,6 +5231,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 787.7086345904828,
         "training_variance": 1.1809898078703935e-05,
         "risk_budget": 1.1809898078703935e-05,
@@ -2531,6 +5242,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 849.7457729587622,
         "training_variance": 1.1673382780245043e-05,
         "risk_budget": 1.1809898078703935e-05,
@@ -2540,6 +5253,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 882.5331629993856,
         "training_variance": 1.1574937260430457e-05,
         "risk_budget": 1.1809898078703935e-05,
@@ -2549,8 +5264,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 906.9700814380076,
         "training_variance": 1.1089797048538637e-05,
+        "risk_budget": 1.1809898078703935e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 926.7149183247386,
+        "training_variance": 1.1667090842274938e-05,
+        "risk_budget": 1.1809898078703935e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 943.3332428519573,
+        "training_variance": 1.1736592787209697e-05,
+        "risk_budget": 1.1809898078703935e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 966.9981912236807,
+        "training_variance": 1.0055714965450428e-05,
         "risk_budget": 1.1809898078703935e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -2560,6 +5310,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 780.5630341552217,
         "training_variance": 1.3868458753369951e-05,
         "risk_budget": 1.3868458753369951e-05,
@@ -2569,6 +5321,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 842.6143983349284,
         "training_variance": 1.2705516844255024e-05,
         "risk_budget": 1.3868458753369951e-05,
@@ -2578,6 +5332,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 877.0939722567025,
         "training_variance": 1.3367880912484872e-05,
         "risk_budget": 1.3868458753369951e-05,
@@ -2587,8 +5343,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 902.2747153933622,
         "training_variance": 1.3603038587578357e-05,
+        "risk_budget": 1.3868458753369951e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 924.1157180413497,
+        "training_variance": 1.368254895221916e-05,
+        "risk_budget": 1.3868458753369951e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 941.527217573012,
+        "training_variance": 1.3842604734212852e-05,
+        "risk_budget": 1.3868458753369951e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 968.0506961197057,
+        "training_variance": 1.1503121138023052e-05,
         "risk_budget": 1.3868458753369951e-05,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -2598,6 +5389,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 772.0263888427119,
         "training_variance": 1.7038211898545756e-05,
         "risk_budget": 1.7038211898545756e-05,
@@ -2607,6 +5400,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 838.475588903885,
         "training_variance": 1.1919090943706856e-05,
         "risk_budget": 1.7038211898545756e-05,
@@ -2616,6 +5411,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 869.8644266837741,
         "training_variance": 1.2706967476324514e-05,
         "risk_budget": 1.7038211898545756e-05,
@@ -2625,8 +5422,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 890.20595576817,
         "training_variance": 1.6254507299700956e-05,
+        "risk_budget": 1.7038211898545756e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 910.4799847662568,
+        "training_variance": 1.6605650934678173e-05,
+        "risk_budget": 1.7038211898545756e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 925.6730343223134,
+        "training_variance": 1.695733985981625e-05,
+        "risk_budget": 1.7038211898545756e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 938.300583080138,
+        "training_variance": 1.699746389242777e-05,
         "risk_budget": 1.7038211898545756e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2636,6 +5468,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 744.4416990605578,
         "training_variance": 1.5050109265260051e-05,
         "risk_budget": 1.5050109265260051e-05,
@@ -2645,6 +5479,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 829.1949412082786,
         "training_variance": 1.4909032212125446e-05,
         "risk_budget": 1.5050109265260051e-05,
@@ -2654,6 +5490,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 857.9816150095712,
         "training_variance": 1.4509922428271703e-05,
         "risk_budget": 1.5050109265260051e-05,
@@ -2663,8 +5501,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 877.9142275988661,
         "training_variance": 1.488949483900169e-05,
+        "risk_budget": 1.5050109265260051e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 896.9987388737773,
+        "training_variance": 1.4728496875906356e-05,
+        "risk_budget": 1.5050109265260051e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 913.023357253993,
+        "training_variance": 1.4519637228821255e-05,
+        "risk_budget": 1.5050109265260051e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 20,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 932.7615091665166,
+        "training_variance": 1.4229574354378496e-05,
         "risk_budget": 1.5050109265260051e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2674,6 +5547,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 760.3098078234248,
         "training_variance": 2.0154464767388357e-05,
         "risk_budget": 2.0154464767388357e-05,
@@ -2683,6 +5558,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 876.1372654238133,
         "training_variance": 1.6810848959146038e-05,
         "risk_budget": 2.0154464767388357e-05,
@@ -2692,6 +5569,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 913.8729231080572,
         "training_variance": 1.7710732011482135e-05,
         "risk_budget": 2.0154464767388357e-05,
@@ -2701,8 +5580,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 941.4894745731638,
         "training_variance": 1.9535577804687026e-05,
+        "risk_budget": 2.0154464767388357e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 967.79437685134,
+        "training_variance": 2.0124762386855065e-05,
+        "risk_budget": 2.0154464767388357e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 990.4534011670876,
+        "training_variance": 2.0145481211271755e-05,
+        "risk_budget": 2.0154464767388357e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 19,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 1020.1323900947414,
+        "training_variance": 2.0111680702808445e-05,
         "risk_budget": 2.0154464767388357e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2712,6 +5626,8 @@
       "SOURCE_M": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 760.6600054765329,
         "training_variance": 1.725358182345944e-05,
         "risk_budget": 1.725358182345944e-05,
@@ -2721,6 +5637,8 @@
       "ADF_RISK1": {
         "pairs": 206,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 813.0927488369035,
         "training_variance": 1.5401883890870022e-05,
         "risk_budget": 1.725358182345944e-05,
@@ -2730,6 +5648,8 @@
       "ADF_RISK2": {
         "pairs": 206,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 843.7337533396802,
         "training_variance": 1.565739365672634e-05,
         "risk_budget": 1.725358182345944e-05,
@@ -2739,8 +5659,43 @@
       "ADF_RISK3": {
         "pairs": 206,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 864.3859597865842,
         "training_variance": 1.6034824846766518e-05,
+        "risk_budget": 1.725358182345944e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 206,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 883.3631756377101,
+        "training_variance": 1.5561987301905106e-05,
+        "risk_budget": 1.725358182345944e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 206,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 899.4873803499515,
+        "training_variance": 1.5470985729234903e-05,
+        "risk_budget": 1.725358182345944e-05,
+        "gross_rows": 22,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 206,
+        "max_degree": 12,
+        "degree_limit": null,
+        "effective_solver_cap": 206,
+        "score": 916.1599553627914,
+        "training_variance": 1.543649107891095e-05,
         "risk_budget": 1.725358182345944e-05,
         "gross_rows": 22,
         "max_return_error": 0.0
@@ -2750,6 +5705,8 @@
       "SOURCE_M": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 756.232592776708,
         "training_variance": 1.864890582596191e-05,
         "risk_budget": 1.864890582596191e-05,
@@ -2759,6 +5716,8 @@
       "ADF_RISK1": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 822.7227035544668,
         "training_variance": 1.804804199621057e-05,
         "risk_budget": 1.864890582596191e-05,
@@ -2768,6 +5727,8 @@
       "ADF_RISK2": {
         "pairs": 205,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 851.4724853575958,
         "training_variance": 1.655107226969353e-05,
         "risk_budget": 1.864890582596191e-05,
@@ -2777,8 +5738,43 @@
       "ADF_RISK3": {
         "pairs": 205,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 873.0373010450214,
         "training_variance": 1.5264662645845298e-05,
+        "risk_budget": 1.864890582596191e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 205,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 891.2167747758574,
+        "training_variance": 1.607640898541513e-05,
+        "risk_budget": 1.864890582596191e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 205,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 907.2052327509083,
+        "training_variance": 1.633117571387407e-05,
+        "risk_budget": 1.864890582596191e-05,
+        "gross_rows": 21,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 205,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 205,
+        "score": 921.8869662671649,
+        "training_variance": 1.6554867895783457e-05,
         "risk_budget": 1.864890582596191e-05,
         "gross_rows": 21,
         "max_return_error": 0.0
@@ -2788,6 +5784,8 @@
       "SOURCE_M": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 766.9634566753716,
         "training_variance": 2.1111828831051722e-05,
         "risk_budget": 2.1111828831051722e-05,
@@ -2797,6 +5795,8 @@
       "ADF_RISK1": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 849.8672692698603,
         "training_variance": 1.7219461257840817e-05,
         "risk_budget": 2.1111828831051722e-05,
@@ -2806,6 +5806,8 @@
       "ADF_RISK2": {
         "pairs": 205,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 882.464581590475,
         "training_variance": 1.639182124949507e-05,
         "risk_budget": 2.1111828831051722e-05,
@@ -2815,8 +5817,43 @@
       "ADF_RISK3": {
         "pairs": 205,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 905.7194962221627,
         "training_variance": 1.57390161680786e-05,
+        "risk_budget": 2.1111828831051722e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 205,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 924.8679379289363,
+        "training_variance": 1.6032132871257764e-05,
+        "risk_budget": 2.1111828831051722e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 205,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 940.5505671770936,
+        "training_variance": 1.5826246986362823e-05,
+        "risk_budget": 2.1111828831051722e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 205,
+        "max_degree": 14,
+        "degree_limit": null,
+        "effective_solver_cap": 205,
+        "score": 954.8608228462197,
+        "training_variance": 1.7204423420026116e-05,
         "risk_budget": 2.1111828831051722e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -2826,6 +5863,8 @@
       "SOURCE_M": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 743.337251615339,
         "training_variance": 2.471233201434502e-05,
         "risk_budget": 2.471233201434502e-05,
@@ -2835,6 +5874,8 @@
       "ADF_RISK1": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 827.0312704266387,
         "training_variance": 2.2563504407733515e-05,
         "risk_budget": 2.471233201434502e-05,
@@ -2844,6 +5885,8 @@
       "ADF_RISK2": {
         "pairs": 205,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 854.9613257382435,
         "training_variance": 2.253683613531556e-05,
         "risk_budget": 2.471233201434502e-05,
@@ -2853,8 +5896,43 @@
       "ADF_RISK3": {
         "pairs": 205,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 876.6458253450444,
         "training_variance": 2.24459635560623e-05,
+        "risk_budget": 2.471233201434502e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 205,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 894.6881141475649,
+        "training_variance": 2.219571663000433e-05,
+        "risk_budget": 2.471233201434502e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 205,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 910.9473781665874,
+        "training_variance": 2.2477257064622852e-05,
+        "risk_budget": 2.471233201434502e-05,
+        "gross_rows": 24,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 205,
+        "max_degree": 13,
+        "degree_limit": null,
+        "effective_solver_cap": 205,
+        "score": 926.4057763001474,
+        "training_variance": 2.2981385288757562e-05,
         "risk_budget": 2.471233201434502e-05,
         "gross_rows": 24,
         "max_return_error": 0.0
@@ -2864,6 +5942,8 @@
       "SOURCE_M": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 737.603007703817,
         "training_variance": 1.821535865815351e-05,
         "risk_budget": 1.821535865815351e-05,
@@ -2873,6 +5953,8 @@
       "ADF_RISK1": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 810.5618673981558,
         "training_variance": 1.7266063542165948e-05,
         "risk_budget": 1.821535865815351e-05,
@@ -2882,6 +5964,8 @@
       "ADF_RISK2": {
         "pairs": 205,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 837.6857757862228,
         "training_variance": 1.698673521469555e-05,
         "risk_budget": 1.821535865815351e-05,
@@ -2891,8 +5975,43 @@
       "ADF_RISK3": {
         "pairs": 205,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 859.4744988899884,
         "training_variance": 1.6719430133450427e-05,
+        "risk_budget": 1.821535865815351e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 205,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 876.4973137976708,
+        "training_variance": 1.657514362335742e-05,
+        "risk_budget": 1.821535865815351e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 205,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 891.2818056295612,
+        "training_variance": 1.7252248350162582e-05,
+        "risk_budget": 1.821535865815351e-05,
+        "gross_rows": 20,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 205,
+        "max_degree": 11,
+        "degree_limit": null,
+        "effective_solver_cap": 205,
+        "score": 904.7086689572607,
+        "training_variance": 1.79076327138891e-05,
         "risk_budget": 1.821535865815351e-05,
         "gross_rows": 20,
         "max_return_error": 0.0
@@ -2902,6 +6021,8 @@
       "SOURCE_M": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 723.4305194212354,
         "training_variance": 1.761927758571026e-05,
         "risk_budget": 1.761927758571026e-05,
@@ -2911,6 +6032,8 @@
       "ADF_RISK1": {
         "pairs": 205,
         "max_degree": 1,
+        "degree_limit": 1,
+        "effective_solver_cap": 1,
         "score": 804.4699689507033,
         "training_variance": 1.692171066039631e-05,
         "risk_budget": 1.761927758571026e-05,
@@ -2920,6 +6043,8 @@
       "ADF_RISK2": {
         "pairs": 205,
         "max_degree": 2,
+        "degree_limit": 2,
+        "effective_solver_cap": 2,
         "score": 834.4179922976022,
         "training_variance": 1.6137447891615626e-05,
         "risk_budget": 1.761927758571026e-05,
@@ -2929,22 +6054,62 @@
       "ADF_RISK3": {
         "pairs": 205,
         "max_degree": 3,
+        "degree_limit": 3,
+        "effective_solver_cap": 3,
         "score": 857.258411498726,
         "training_variance": 1.5928674741563787e-05,
+        "risk_budget": 1.761927758571026e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK4": {
+        "pairs": 205,
+        "max_degree": 4,
+        "degree_limit": 4,
+        "effective_solver_cap": 4,
+        "score": 874.3654424361321,
+        "training_variance": 1.7188519501462358e-05,
+        "risk_budget": 1.761927758571026e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK5": {
+        "pairs": 205,
+        "max_degree": 5,
+        "degree_limit": 5,
+        "effective_solver_cap": 5,
+        "score": 890.2456472483151,
+        "training_variance": 1.755612153221558e-05,
+        "risk_budget": 1.761927758571026e-05,
+        "gross_rows": 23,
+        "max_return_error": 0.0
+      },
+      "ADF_RISK_UNLIMITED": {
+        "pairs": 205,
+        "max_degree": 10,
+        "degree_limit": null,
+        "effective_solver_cap": 205,
+        "score": 904.9804619880886,
+        "training_variance": 1.7506018979333203e-05,
         "risk_budget": 1.761927758571026e-05,
         "gross_rows": 23,
         "max_return_error": 0.0
       }
     }
   },
+  "protected_original_files": 951,
+  "protected_extension_files": 545,
   "scope": "Frozen selection feasibility and exact original trade replay; no global optimality certificate.",
-  "checked_at": "2026-11-02T08:16:56.074561+00:00",
+  "checked_at": "2026-11-02T08:45:10.956038+00:00",
   "costs": {
-    "rows": 27024,
+    "rows": 47292,
     "models": [
       "ADF_RISK1",
       "ADF_RISK2",
       "ADF_RISK3",
+      "ADF_RISK4",
+      "ADF_RISK5",
+      "ADF_RISK_UNLIMITED",
       "SOURCE_M"
     ],
     "cost_bps": [
@@ -2953,6 +6118,46 @@
       5,
       10
     ],
-    "checked_summary_rows": 1408
+    "checked_summary_rows": 2464,
+    "cost_output_sha256": {
+      "daily.csv": "db8b1e92ea2fc19500d6b7b0437459ab35741dda4c8459932be4c244b1689066",
+      "metrics.csv": "c82cdb4e00bca1b4cc7c577c2ebc2d127bcf1f3959d785fdf50da6d5b965bc76",
+      "monthly.csv": "70d4d83baf831b7ca7e3737f4630052405ab1c473f3827261748fc4a85035eec",
+      "periods.csv": "76ad6bcf3f72f4140c5b9d6a0c7f0b0a1acb920348108f554be741882139891b",
+      "yearly.csv": "caacd1b5f836e05b46358ebf6b07a6dac3da55ba65e4b8f602ed9a5c56dd6c62"
+    },
+    "protected_files": 1496
+  },
+  "legacy_result_compatibility": {
+    "passed": true,
+    "compared_rows": 28432,
+    "path": "checks/legacy_result_compatibility.json",
+    "sha256": "3901c6df3fd2f0ac749414ae80c34e36527a65ff9fb8ae7647c72ee046ceb663"
+  },
+  "extension_summary": {
+    "ADF_RISK4": {
+      "risk_ratio_max": 0.9999599953739254,
+      "risk_ratio_min": 0.4032016608680474,
+      "maximum_degree": 4,
+      "maximum_gross_return_error": 0.0,
+      "selected_pairs_min": 205,
+      "selected_pairs_max": 216
+    },
+    "ADF_RISK5": {
+      "risk_ratio_max": 0.999919823078918,
+      "risk_ratio_min": 0.4276865720087262,
+      "maximum_degree": 5,
+      "maximum_gross_return_error": 0.0,
+      "selected_pairs_min": 205,
+      "selected_pairs_max": 216
+    },
+    "ADF_RISK_UNLIMITED": {
+      "risk_ratio_max": 0.9999697364328242,
+      "risk_ratio_min": 0.506071033860206,
+      "maximum_degree": 21,
+      "maximum_gross_return_error": 0.0,
+      "selected_pairs_min": 205,
+      "selected_pairs_max": 216
+    }
   }
 }

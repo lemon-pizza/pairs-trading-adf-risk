@@ -18,10 +18,13 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 STUDY = ROOT / 'research/adf_risk_selection/output'
+EXTENSION = ROOT / 'research/overlap_extension/output'
 sys.path.insert(0, str(ROOT / 'src'))
 from trading import trade_interval
 
-MODELS = ('SOURCE_M', 'ADF_RISK1', 'ADF_RISK2', 'ADF_RISK3')
+ORIGINAL_MODELS = ('SOURCE_M', 'ADF_RISK1', 'ADF_RISK2', 'ADF_RISK3')
+EXTENSION_MODELS = ('ADF_RISK4', 'ADF_RISK5', 'ADF_RISK_UNLIMITED')
+MODELS = ORIGINAL_MODELS + EXTENSION_MODELS
 
 
 def digest(path):
@@ -38,15 +41,38 @@ def close(actual, expected, message, atol=1e-10, rtol=1e-10):
                                equal_nan=True, err_msg=message)
 
 
+def frozen_counts(root=ROOT):
+    counts, seen = {}, set()
+    for label, filename in [('original', 'frozen_inputs.json'),
+                            ('extension', 'overlap_extension_inputs.json')]:
+        path = root / 'checks' / filename
+        check(path.is_file(), 'Missing frozen input manifest: ' + filename)
+        manifest = json.loads(path.read_text())
+        files = manifest['files']
+        check(bool(files), 'Frozen manifest has no files: ' + filename)
+        for name, expected in files.items():
+            path = root / name
+            check(path.is_file(), 'Missing frozen input: ' + name)
+            check(digest(path) == expected, 'Frozen input changed: ' + name)
+        counts[label] = len(files)
+        seen.update(files)
+    counts['total'] = len(seen)
+    return counts
+
+
 def verify_frozen_inputs(root=ROOT):
-    manifest = json.loads((root / 'checks/frozen_inputs.json').read_text())
-    files = manifest['files']
-    check(bool(files), 'Frozen manifest has no files')
-    for name, expected in files.items():
-        path = root / name
-        check(path.is_file(), 'Missing frozen input: ' + name)
-        check(digest(path) == expected, 'Frozen input changed: ' + name)
-    return len(files)
+    return frozen_counts(root)['total']
+
+
+def degree_limit(model, cardinality):
+    if model == 'SOURCE_M':
+        return 1
+    if model == 'ADF_RISK_UNLIMITED':
+        # Any simple support with K edges already has every degree <= K.
+        return cardinality
+    if model in MODELS:
+        return int(model.removeprefix('ADF_RISK'))
+    raise ValueError('Unknown strategy: ' + model)
 
 
 def independent_metrics(returns):
@@ -60,7 +86,12 @@ def independent_metrics(returns):
 
 def validate_month(key, prices):
     record = json.loads((STUDY / 'months' / (key + '.json')).read_text())
+    extension_record = json.loads((EXTENSION / 'months' / (key + '.json')).read_text())
     cutoff, end = pd.Timestamp(record['cutoff']), pd.Timestamp(record['end'])
+    for field in ('cutoff', 'end', 'train_days', 'train_start', 'train_end', 'K'):
+        check(extension_record[field] == record[field], f'{key}: extension changed {field}')
+    close(extension_record['baseline_variance'], record['baseline_variance'],
+          f'{key}: extension baseline budget', atol=1e-14, rtol=1e-8)
     ci = prices.index.get_loc(cutoff)
     start = prices.index[ci - 251]
     check(record['train_days'] == 252 and pd.Timestamp(record['train_start']) == start,
@@ -75,19 +106,22 @@ def validate_month(key, prices):
     close(record['baseline_variance'], budget, f'{key}: baseline risk', atol=1e-14, rtol=1e-8)
     result, frames, previous_score = {}, {}, None
     for model in MODELS:
-        model_record = record['models'][model]
-        selection_path = STUDY / 'months' / model_record['selection_file']
-        daily_path = STUDY / 'months' / model_record['daily_file']
-        check(digest(selection_path) == record['output_sha256'][selection_path.name], 'Selection receipt hash')
-        check(digest(daily_path) == record['output_sha256'][daily_path.name], 'Daily receipt hash')
+        model_folder, model_receipt = (STUDY, record) if model in ORIGINAL_MODELS else (EXTENSION, extension_record)
+        model_record = model_receipt['models'][model]
+        selection_path = model_folder / 'months' / model_record['selection_file']
+        daily_path = model_folder / 'months' / model_record['daily_file']
+        check(digest(selection_path) == model_receipt['output_sha256'][selection_path.name], 'Selection receipt hash')
+        check(digest(daily_path) == model_receipt['output_sha256'][daily_path.name], 'Daily receipt hash')
         selected = pd.read_parquet(selection_path)
         pairs = list(selected[['ASSET_1', 'ASSET_2']].itertuples(index=False, name=None))
         check(len(pairs) == record['K'] and len({frozenset(p) for p in pairs}) == len(pairs),
               f'{key}/{model}: cardinality or reverse duplicate')
         check(all(x != y for x, y in pairs), f'{key}/{model}: self pair')
         degree = pd.Series([asset for pair in pairs for asset in pair]).value_counts()
-        cap = 1 if model == 'SOURCE_M' else int(model[-1])
+        cap = degree_limit(model, record['K'])
         check(degree.max() <= cap, f'{key}/{model}: stock degree')
+        if model in EXTENSION_MODELS:
+            check(model_record['solver']['cap'] == cap, f'{key}/{model}: optimizer degree cap')
         score = float(-selected.T_STAT.sum())
         close(score, model_record['solver']['score_sum'], f'{key}/{model}: score', atol=1e-8)
         if previous_score is not None:
@@ -115,6 +149,8 @@ def validate_month(key, prices):
             close(stored.returns, old.returns, 'Original frozen interval', atol=1e-12, rtol=0)
         frames[model] = stored
         result[model] = {'pairs': len(pairs), 'max_degree': int(degree.max()),
+                         'degree_limit': None if model == 'ADF_RISK_UNLIMITED' else cap,
+                         'effective_solver_cap': cap,
                          'score': score, 'training_variance': risk, 'risk_budget': budget,
                          'gross_rows': len(stored), 'max_return_error': float(np.nanmax(np.abs(stored.returns - expected.returns)))}
     return result, frames
@@ -162,9 +198,23 @@ def validate_cost_outputs(frames, folder):
     checked = 0
     for name in ('metrics.csv', 'yearly.csv', 'monthly.csv', 'periods.csv'):
         path = folder / name
-        if not path.exists():
-            continue
+        check(path.is_file(), 'Missing required cost summary: ' + name)
         summary = pd.read_csv(path)
+        check(set(summary.model) == set(MODELS), name + ': missing cost strategy')
+        check(set(summary.cost_bps) == {0, 1, 5, 10}, name + ': missing fee scenario')
+        check(not summary.duplicated(['model', 'cost_bps', 'period']).any(), name + ': repeated period')
+        period_sets = {
+            'metrics.csv': {'extended_2017'},
+            'yearly.csv': {str(year) for year in range(2017, 2024)},
+            'monthly.csv': set(pd.period_range('2017-01', '2023-05', freq='M').astype(str)),
+            'periods.csv': {'2017_2019_continuation', '2020_2023_continuation',
+                            '2020_source_default_continuation'},
+        }
+        for model in MODELS:
+            for bps in (0, 1, 5, 10):
+                present = summary.loc[summary.model.eq(model) & summary.cost_bps.eq(bps), 'period']
+                check(set(present.astype(str)) == period_sets[name],
+                      f'{name}: incomplete {model}/{bps} periods')
         for row in summary.itertuples():
             part = daily[daily.model.eq(row.model) & daily.cost_bps.eq(row.cost_bps)
                          & daily.date.ge(row.start) & daily.date.le(row.end)]
@@ -189,9 +239,15 @@ def validate_cost_outputs(frames, folder):
 
 
 def validate(months=None, check_costs=True, destination=None):
-    protected = verify_frozen_inputs()
+    counts = frozen_counts()
+    protected = counts['total']
     keys = sorted(p.stem for p in (STUDY / 'months').glob('*.json'))
     check(len(keys) == 77, 'Expected all 77 frozen months')
+    extension_keys = sorted(p.stem for p in (EXTENSION / 'months').glob('*.json'))
+    check(extension_keys == keys, 'Extension must contain the same 77 frozen months')
+    extension_execution = json.loads((EXTENSION / 'execution.json').read_text())
+    check(extension_execution.get('complete') and extension_execution['months'] == keys,
+          'Extension execution must be complete and match all frozen months')
     if months is not None:
         check(months > 0, 'months must be positive')
         keys = keys[:months]
@@ -208,6 +264,8 @@ def validate(months=None, check_costs=True, destination=None):
     complete = len(keys) == 77
     report = {'passed': True, 'complete': complete, 'validated_months': len(keys),
               'protected_files': protected, 'models': list(MODELS), 'months': results,
+              'protected_original_files': counts['original'],
+              'protected_extension_files': counts['extension'],
               'scope': 'Frozen selection feasibility and exact original trade replay; no global optimality certificate.',
               'checked_at': datetime.now(timezone.utc).isoformat()}
     if check_costs and complete:

@@ -13,7 +13,8 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MODELS = ('SOURCE_M', 'ADF_RISK1', 'ADF_RISK2', 'ADF_RISK3')
+MODELS = ('SOURCE_M', 'ADF_RISK1', 'ADF_RISK2', 'ADF_RISK3',
+          'ADF_RISK4', 'ADF_RISK5', 'ADF_RISK_UNLIMITED')
 
 
 class IndependentCostTest(unittest.TestCase):
@@ -61,7 +62,8 @@ class IndependentCostTest(unittest.TestCase):
     @classmethod
     @lru_cache(maxsize=None)
     def holdings(cls, model, formation, date):
-        path = ROOT / 'research/adf_risk_selection/output/months' / (
+        study = 'adf_risk_selection' if model in MODELS[:4] else 'overlap_extension'
+        path = ROOT / f'research/{study}/output/months' / (
             f'{pd.Timestamp(formation):%Y%m%d}_{model}_selection.parquet')
         selection = pd.read_parquet(path)
         day = int(cls.prices.index.get_loc(pd.Timestamp(date)))

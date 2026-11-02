@@ -1,0 +1,19 @@
+{
+  "models": ["ADF_RISK4", "ADF_RISK5", "ADF_RISK_UNLIMITED"],
+  "final_strategy_unchanged": "ADF_RISK3",
+  "pair_count": "Original monthly SOURCE_M cardinality, 205-216",
+  "risk_anchor": "Original SOURCE_M on common training dates, unchanged",
+  "train_days": 252,
+  "objective": "Sum of negative unrounded original ADF t statistics",
+  "degree_caps": [4, 5, "unlimited"],
+  "unlimited_implementation": "cap=K, which is nonbinding for a portfolio of K distinct edges",
+  "warm_start": "frozen ADF_RISK3 -> ADF_RISK4 -> ADF_RISK5 -> ADF_RISK_UNLIMITED",
+  "time_limit_per_cap_seconds": 8.0,
+  "max_moves": 1000,
+  "structural_milp": false,
+  "risk_relative_tolerance": 1e-8,
+  "risk_absolute_tolerance": 0.0,
+  "unchanged": ["Candidate graph and orientation", "Original trading and capital allocation", "Risk estimation", "Fee convention"],
+  "interpretation": "Additional feasible bounded-search comparisons, not certified global optima. Later stages inherit earlier optimization work.",
+  "configuration_role": "Recorded frozen experiment declaration; editing this file alone does not alter implementation or selections."
+}

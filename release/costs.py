@@ -26,7 +26,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from trading import WINDOW, _bounds, _pair_list, public_arithmetic, rolling_endpoint
 
-MODELS = ('SOURCE_M', 'ADF_RISK1', 'ADF_RISK2', 'ADF_RISK3')
+ORIGINAL_MODELS = ('SOURCE_M', 'ADF_RISK1', 'ADF_RISK2', 'ADF_RISK3')
+EXTENSION_MODELS = ('ADF_RISK4', 'ADF_RISK5', 'ADF_RISK_UNLIMITED')
+MODELS = ORIGINAL_MODELS + EXTENSION_MODELS
 COST_BPS = (0., 1., 5., 10.)
 START, END = pd.Timestamp('2017-01-03'), pd.Timestamp('2023-05-31')
 PRICE_SHA256 = '7605eab6525ddb5db66965d1559a56b48375f11a14cd1040eaa12318a545939c'
@@ -177,6 +179,13 @@ def run(root=ROOT, output=None):
     execution = json.loads((frozen / 'execution.json').read_text())
     if not execution.get('complete') or len(execution['months']) != 77:
         raise ValueError('Require the complete frozen pre-cap20 study')
+    extension = root / 'research/overlap_extension/output'
+    extension_execution = extension / 'execution.json'
+    if not extension_execution.is_file():
+        raise ValueError('Complete frozen b=4, b=5 and unlimited results are required')
+    added_execution = json.loads(extension_execution.read_text())
+    if not added_execution.get('complete') or added_execution['months'] != execution['months']:
+        raise ValueError('Extension must cover the same 77 formation dates')
     price_path = root / 'data/prices.parquet.gz'
     if digest(price_path) != PRICE_SHA256:
         raise ValueError('Original price hash differs')
@@ -185,23 +194,35 @@ def run(root=ROOT, output=None):
     previous = {m: np.zeros(len(prices.columns)) for m in MODELS}
     records = {m: [] for m in MODELS}
     sources = {str(price_path.relative_to(root)): digest(price_path),
-               'src/trading.py': digest(root/'src/trading.py')}
+               'src/trading.py': digest(root/'src/trading.py'),
+               str((frozen/'execution.json').relative_to(root)): digest(frozen/'execution.json'),
+               str(extension_execution.relative_to(root)): digest(extension_execution)}
     max_error = {'pnl': 0., 'capital': 0., 'returns': 0.}
     for key in execution['months']:
-        receipt_path = frozen / 'months' / f'{key}.json'
-        receipt = json.loads(receipt_path.read_text())
-        sources[str(receipt_path.relative_to(root))] = digest(receipt_path)
-        selections, reference = {}, {}
-        for model in MODELS:
-            item = receipt['models'][model]
-            for filename in (item['selection_file'], item['daily_file']):
-                path = frozen / 'months' / filename
-                if digest(path) != receipt['output_sha256'][filename]:
-                    raise ValueError('Frozen output hash mismatch: '+filename)
-                sources[str(path.relative_to(root))] = digest(path)
-            selections[model] = pd.read_parquet(frozen/'months'/item['selection_file'])
-            reference[model] = pd.read_parquet(frozen/'months'/item['daily_file'])
-        dates, states = reconstruct_month(prices, selections, receipt['cutoff'], receipt['end'])
+        states, reference, receipts = {}, {}, {}
+        dates = None
+        # Keep the original four-model batch unchanged. Adding other pairs to
+        # its union can change numeric evaluation order and legacy fee bytes.
+        for folder, group in ((frozen, ORIGINAL_MODELS), (extension, EXTENSION_MODELS)):
+            receipt_path = folder / 'months' / f'{key}.json'
+            receipt = json.loads(receipt_path.read_text())
+            sources[str(receipt_path.relative_to(root))] = digest(receipt_path)
+            selections = {}
+            for model in group:
+                receipts[model] = receipt
+                item = receipt['models'][model]
+                for filename in (item['selection_file'], item['daily_file']):
+                    path = folder / 'months' / filename
+                    if digest(path) != receipt['output_sha256'][filename]:
+                        raise ValueError('Frozen output hash mismatch: '+filename)
+                    sources[str(path.relative_to(root))] = digest(path)
+                selections[model] = pd.read_parquet(folder/'months'/item['selection_file'])
+                reference[model] = pd.read_parquet(folder/'months'/item['daily_file'])
+            group_dates, group_states = reconstruct_month(prices, selections, receipt['cutoff'], receipt['end'])
+            if dates is not None:
+                pd.testing.assert_index_equal(dates, group_dates, check_names=False)
+            dates = group_dates
+            states.update(group_states)
         for model in MODELS:
             state, ref = states[model], reference[model]
             pd.testing.assert_index_equal(dates, ref.index, check_names=False)
@@ -219,7 +240,7 @@ def run(root=ROOT, output=None):
                 current = state['shares'][row]
                 notional, stale, count = order_notional(current, previous[model], prices.loc[date], marks.loc[date])
                 records[model].append({'event_id': len(records[model]), 'date': date,
-                    'formation_cutoff': pd.Timestamp(receipt['cutoff']), 'model': model,
+                    'formation_cutoff': pd.Timestamp(receipts[model]['cutoff']), 'model': model,
                     'pnl': float(ref.pnl.iloc[row]), 'capital': float(ref.capital.iloc[row]),
                     'gross_return': float(ref.returns.iloc[row]), 'order_notional': notional,
                     'terminal_notional': 0., 'stale_notional': stale, 'stock_order_count': count,
@@ -249,7 +270,7 @@ def run(root=ROOT, output=None):
     daily = pd.concat(frames, ignore_index=True)
     tables = aggregate(daily)
     original_metrics = pd.read_csv(frozen/'analysis/metrics.csv')
-    for model in MODELS:
+    for model in ORIGINAL_MODELS:
         expected = original_metrics.loc[(original_metrics.scope == 'extended_2017') & (original_metrics.model == model)].iloc[0]
         actual = tables['metrics'].loc[(tables['metrics'].model == model) & tables['metrics'].cost_bps.eq(0)].iloc[0]
         np.testing.assert_allclose(actual.cumulative_return, expected.cumulative_return, atol=1e-12, rtol=0)
@@ -257,6 +278,7 @@ def run(root=ROOT, output=None):
         source_actual = tables['periods'].loc[(tables['periods'].model == model) & tables['periods'].cost_bps.eq(0)
                            & tables['periods'].period.eq('2020_source_default_continuation')].iloc[0]
         np.testing.assert_allclose(source_actual.cumulative_return, source_expected.cumulative_return, atol=1e-12, rtol=0)
+    for model in MODELS:
         net_returns = tables['metrics'].loc[tables['metrics'].model.eq(model)].sort_values('cost_bps').cumulative_return
         if not (np.diff(net_returns.to_numpy()) <= 0).all():
             raise AssertionError('Higher nonnegative fee must not improve return')
@@ -271,6 +293,9 @@ def run(root=ROOT, output=None):
         'events_per_model': len(records[MODELS[0]]),
         'unique_dates_per_model': len({r['date'] for r in records[MODELS[0]]}),
         'duplicate_dates_retained': True, 'zero_cost_matches_original': True,
+        'original_comparison_models': list(ORIGINAL_MODELS),
+        'extension_models': list(EXTENSION_MODELS),
+        'zero_cost_matches_frozen_monthly_returns_all_models': True,
         'source_default_zero_cost_matches_original': True,
         'reconstruction_max_absolute_errors': max_error,
         'source_inputs_unchanged': True, 'input_sha256': sources,
