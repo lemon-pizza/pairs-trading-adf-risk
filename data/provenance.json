@@ -1,0 +1,13 @@
+{
+  "source_repository": "https://github.com/jingmouren/kai-trading-bot-pair",
+  "source_commit": "aaac6d999d6b077304a887caff2aab514d7ea6a2",
+  "upstream_file": "spx_prices.parquet.gz",
+  "local_file": "data/prices.parquet.gz",
+  "git_blob_sha1": "6f8e90406eeb9c0a333ff8a43b0f446227fd0ed3",
+  "sha256": "7605eab6525ddb5db66965d1559a56b48375f11a14cd1040eaa12318a545939c",
+  "shape": [3388, 505],
+  "dates": ["2010-01-04", "2023-06-20"],
+  "paper": "https://arxiv.org/html/2403.07998v1",
+  "license": "data/SOURCE_LICENSE.txt preserves the upstream repository license; detailed original price vendor adjustment and historical membership metadata are not available",
+  "processing": "Raw source bytes preserved; selection and daily rolling cache regenerated from this file only. No old-model selection or return data used."
+}

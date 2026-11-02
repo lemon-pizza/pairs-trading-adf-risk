@@ -1,0 +1,21 @@
+{
+  "model_id": "author_code_aaac6d9_q_replay",
+  "scope": "Conditional execution of preserved public author code; not exact replication of the paper tables",
+  "repository": "https://github.com/jingmouren/kai-trading-bot-pair",
+  "commit": "aaac6d999d6b077304a887caff2aab514d7ea6a2",
+  "source_default_period": ["2020-01-31", "2023-05-31"],
+  "extended_period": ["2017-01-03", "2023-05-31"],
+  "universe": "Full-sample return missing fraction <0.05, preserving old pct_change forward-fill behavior only for the universe filter; set order fixed with PYTHONHASHSEED=0",
+  "candidates": "All directed permutations with complete positive 504-observation historical log prices at each business-month-end",
+  "ADF": "Original default statsmodels.adfuller with AIC autolag; validated acceleration, not fixed-lag substitution",
+  "M": "Preserve original Graph rating attribute and max_weight_matching(maxcardinality=1) without weight='rating': effectively unweighted maximum-cardinality matching",
+  "B": "Every directed pair with ADF p<=0.05, no top-K restriction",
+  "daily_cache_completion": "Missing daily SPREAD/BETA generator supplied as trailing504 log-OLS endpoint residual and coefficient; explicit assumption",
+  "Q": "20-observation median and Q25-Q75 denominator, sign*round(abs), one-row shift",
+  "pnl": "Source run_trade arithmetic: lagged spread position, current beta share ratio, exp(beta)->log, current-price gross capital denominator and source NaN rules",
+  "boundaries": "Inclusive [month_end, next_month_end]; retain duplicated internal month-ends when concatenating",
+  "costs_and_Z": "Not reconstructed: missing active executable paths in this source snapshot",
+  "source_compatibility": "Path and reader shims, missing driver names/return wiring; no editing of preserved source files; input Series names cleared only in independent old-function sklearn reference",
+  "limitations": ["Full-sample universe uses future availability", "Same-day selection/beta/capital and duplicated dates preserved", "Historical author environment and daily caches unavailable", "Stock membership and corporate actions incomplete"],
+  "not_configurable_input": "This file records rules. Implementations live in src; editing this JSON does not change the run."
+}

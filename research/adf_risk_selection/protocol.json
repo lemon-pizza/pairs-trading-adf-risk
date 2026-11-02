@@ -1,0 +1,38 @@
+{
+  "model": "original_replay_adf_score_with_overlap_and_risk_budget",
+  "objective": "Maximize the sum of negative, unrounded original ADF t statistics; no return forecast objective",
+  "comparison": ["SOURCE_M", "ADF_RISK1", "ADF_RISK2", "ADF_RISK3"],
+  "baseline": "The existing original MAX_WEIGHT matching, including its actual unweighted maximum-cardinality behavior",
+  "cardinality": "Use the original matching count for each month; do not replace it with 100",
+  "candidates": "Full original matching graph reconstructed with unchanged src.selection.calculate_edges; no p-value threshold, top-N restriction, or extra historical-availability filter",
+  "orientation": "Keep the original matching orientation for its edges; for other unordered edges use deterministic lexicographic orientation among available directions; never select both directions",
+  "score": "s_e = -T_STAT, unrounded; this intentionally introduces the proposed score objective and does not claim the original matching used it",
+  "training": {
+    "days": 252,
+    "end": "Formation cutoff inclusive; no prices after cutoff in selection/risk features",
+    "return": "Sum original public_arithmetic P&L divided by sum original capital; pair-level NaNs use original nansum behavior",
+    "zero_capital": "Aggregate NaN return is zero solely in the risk estimator, consistent with the source cumulative-return cash convention; saved trading returns retain source NaN",
+    "variance": "Common-date sample variance, ddof=1",
+    "budget": "Original SOURCE_M variance on the same training dates, shared by all b=1,2,3 variants"
+  },
+  "optimization": {
+    "caps": [1, 2, 3],
+    "risk_rtol": 1e-8,
+    "time_limit_per_cap_seconds": 8.0,
+    "structural_milp": false,
+    "max_moves": 1000,
+    "structural_milp_disabled_reason": "Full-graph MILP presolve can consume the entire search deadline before any exact risk evaluation; production uses the same local-search budget for all caps",
+    "initial_incumbent": "Original baseline, then preceding smaller-cap feasible result",
+    "certificate": "Report achieved feasibility and score separately from global optimality; exact nonlinear ratio risk is never replaced with fixed-weight covariance"
+  },
+  "unchanged": [
+    "Original price file and full-sample universe",
+    "504-observation rolling log OLS and 20-observation Q",
+    "Q magnitude, one-row signal shift, same-day beta, current-price capital denominator",
+    "Original NaN arithmetic, inclusive monthly endpoints and duplicate boundary rows",
+    "Original performance aggregation and both original reporting scopes",
+    "No active trading-cost model: gross results only; no new fee or borrowing convention"
+  ],
+  "outputs": "Separate research/adf_risk_selection/output only; original code, input caches, results, checks and reports remain unchanged",
+  "interpretation": "Controlled source-replay selection comparison. Preserved source timing/accounting limitations prevent treating it as an executable, leakage-free investment backtest. Estimated risk constraint is not an out-of-sample risk guarantee."
+}

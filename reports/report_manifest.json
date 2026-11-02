@@ -1,0 +1,19 @@
+{
+  "source_sha256": {
+    "results/costs/metrics.csv": "af1c24f4b4d7978733f7f5f681ac593bffcb6f55614a23c341bcc8410be2ac22",
+    "results/costs/yearly.csv": "2fa4d44cbd9493d611a38e2a08e708aa06c11b66da1c1b174cd9f68a8eda28f6",
+    "results/costs/monthly.csv": "e950b1cbccc19ce5fee851b4a38b5dae46da4ab4662ddbf35275f33fc2f783ce",
+    "results/costs/periods.csv": "45ce027004b89d8e06e936bb5edb4897708bcf9bf1d9c83815b90416fa938cf9",
+    "results/costs/daily.csv": "f203b397050851bc4d3ebf117a6f47cbc7207d10f713753cbd885e482e1254ec",
+    "results/costs/audit.json": "161c8450f3bf77d835d8a8a85256a99a3fcce234e5223fea3a4f1d4c624fab48",
+    "checks/release_validation.json": "6e4cb796386402b2eacf9ffb012b750fa35229cda94ae5dc50a66b71e674dbaa",
+    "release/README.template.md": "f568d5daff1f472b527bfcd88889847ac597bcdca05fdf81564dc48d967be91b",
+    "release/report.py": "7ce858ae23c1c11508ae8cc5761045cf2c96d5ca3eb7e5fea6cbd824d5d64a6f"
+  },
+  "generated_sha256": {
+    "README.md": "4eec61116d69dda25b71508770400332112321058f7ebc67257de71726ecb3f8",
+    "reports/performance.png": "f9bc10b9e36082b7b62b784f460e68bc050c3d603beb4da8112fdd9f07359d8d",
+    "reports/performance.svg": "bcee62c9f25278a44616dca7b4a47a7b18eecba33a863535c3b1a26f28ca64aa"
+  },
+  "interpretation": "Source-accounting gross and after-cost indices, not self-financing NAV"
+}

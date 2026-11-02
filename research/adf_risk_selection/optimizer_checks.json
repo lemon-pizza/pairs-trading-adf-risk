@@ -1,0 +1,942 @@
+{
+  "passed": true,
+  "exact_cases": [
+    {
+      "repetition": 0,
+      "cap": 1,
+      "score": 11.225476758600115,
+      "variance": 8.479354570210019e-05,
+      "exact_optimum": 11.225476758600115
+    },
+    {
+      "repetition": 0,
+      "cap": 2,
+      "score": 15.309514210395113,
+      "variance": 7.65076937134754e-05,
+      "exact_optimum": 15.309514210395113
+    },
+    {
+      "repetition": 0,
+      "cap": 3,
+      "score": 15.309514210395113,
+      "variance": 7.65076937134754e-05,
+      "exact_optimum": 15.309514210395113
+    },
+    {
+      "repetition": 1,
+      "cap": 1,
+      "score": 13.538094249039094,
+      "variance": 0.00017481865491410906,
+      "exact_optimum": 13.538094249039094
+    },
+    {
+      "repetition": 1,
+      "cap": 2,
+      "score": 16.15663818452574,
+      "variance": 0.0001586409114362343,
+      "exact_optimum": 16.15663818452574
+    },
+    {
+      "repetition": 1,
+      "cap": 3,
+      "score": 16.15663818452574,
+      "variance": 0.0001586409114362343,
+      "exact_optimum": 16.15663818452574
+    },
+    {
+      "repetition": 2,
+      "cap": 1,
+      "score": 13.51053092085307,
+      "variance": 0.00014550661077068216,
+      "exact_optimum": 13.51053092085307
+    },
+    {
+      "repetition": 2,
+      "cap": 2,
+      "score": 16.979394932292102,
+      "variance": 0.00011402992854127566,
+      "exact_optimum": 16.979394932292102
+    },
+    {
+      "repetition": 2,
+      "cap": 3,
+      "score": 16.979394932292102,
+      "variance": 0.00011402992854127566,
+      "exact_optimum": 16.979394932292102
+    },
+    {
+      "repetition": 3,
+      "cap": 1,
+      "score": 14.351879389936963,
+      "variance": 0.00021149420170173242,
+      "exact_optimum": 14.351879389936963
+    },
+    {
+      "repetition": 3,
+      "cap": 2,
+      "score": 16.151464930442863,
+      "variance": 0.0001455953941606963,
+      "exact_optimum": 16.151464930442863
+    },
+    {
+      "repetition": 3,
+      "cap": 3,
+      "score": 16.151464930442863,
+      "variance": 0.0001455953941606963,
+      "exact_optimum": 16.151464930442863
+    },
+    {
+      "repetition": 4,
+      "cap": 1,
+      "score": 14.062111378847314,
+      "variance": 7.328897416370861e-05,
+      "exact_optimum": 14.062111378847314
+    },
+    {
+      "repetition": 4,
+      "cap": 2,
+      "score": 16.295714027211424,
+      "variance": 0.00011448478474422571,
+      "exact_optimum": 16.295714027211424
+    },
+    {
+      "repetition": 4,
+      "cap": 3,
+      "score": 16.295714027211424,
+      "variance": 0.00011448478474422571,
+      "exact_optimum": 16.295714027211424
+    },
+    {
+      "repetition": 5,
+      "cap": 1,
+      "score": 11.53940619663957,
+      "variance": 9.289419620150194e-05,
+      "exact_optimum": 11.53940619663957
+    },
+    {
+      "repetition": 5,
+      "cap": 2,
+      "score": 13.047038052620946,
+      "variance": 9.23980109688511e-05,
+      "exact_optimum": 13.047038052620946
+    },
+    {
+      "repetition": 5,
+      "cap": 3,
+      "score": 13.047038052620946,
+      "variance": 9.23980109688511e-05,
+      "exact_optimum": 13.047038052620946
+    },
+    {
+      "repetition": 6,
+      "cap": 1,
+      "score": 16.521189561648498,
+      "variance": 0.000196277613556535,
+      "exact_optimum": 16.521189561648498
+    },
+    {
+      "repetition": 6,
+      "cap": 2,
+      "score": 16.966917802245547,
+      "variance": 0.0001892300483260072,
+      "exact_optimum": 16.966917802245547
+    },
+    {
+      "repetition": 6,
+      "cap": 3,
+      "score": 16.966917802245547,
+      "variance": 0.0001892300483260072,
+      "exact_optimum": 16.966917802245547
+    },
+    {
+      "repetition": 7,
+      "cap": 1,
+      "score": 12.772878783490679,
+      "variance": 0.00013632025826621229,
+      "exact_optimum": 12.772878783490679
+    },
+    {
+      "repetition": 7,
+      "cap": 2,
+      "score": 15.259678568104801,
+      "variance": 0.0001742268332658551,
+      "exact_optimum": 15.259678568104801
+    },
+    {
+      "repetition": 7,
+      "cap": 3,
+      "score": 15.259678568104801,
+      "variance": 0.0001742268332658551,
+      "exact_optimum": 15.259678568104801
+    },
+    {
+      "repetition": 8,
+      "cap": 1,
+      "score": 13.977942225049887,
+      "variance": 0.00015485526996102003,
+      "exact_optimum": 13.977942225049887
+    },
+    {
+      "repetition": 8,
+      "cap": 2,
+      "score": 15.518650358602134,
+      "variance": 0.00013027108005408394,
+      "exact_optimum": 15.518650358602134
+    },
+    {
+      "repetition": 8,
+      "cap": 3,
+      "score": 15.518650358602134,
+      "variance": 0.00013027108005408394,
+      "exact_optimum": 15.518650358602134
+    },
+    {
+      "repetition": 9,
+      "cap": 1,
+      "score": 14.8162363976409,
+      "variance": 0.00015450844581153765,
+      "exact_optimum": 14.8162363976409
+    },
+    {
+      "repetition": 9,
+      "cap": 2,
+      "score": 15.915774984024958,
+      "variance": 0.00015114846897726702,
+      "exact_optimum": 15.915774984024958
+    },
+    {
+      "repetition": 9,
+      "cap": 3,
+      "score": 15.915774984024958,
+      "variance": 0.00015114846897726702,
+      "exact_optimum": 15.915774984024958
+    },
+    {
+      "repetition": 10,
+      "cap": 1,
+      "score": 13.589835566753163,
+      "variance": 0.00016192651494922381,
+      "exact_optimum": 13.589835566753163
+    },
+    {
+      "repetition": 10,
+      "cap": 2,
+      "score": 15.778196294475396,
+      "variance": 0.00020614088818644033,
+      "exact_optimum": 15.778196294475396
+    },
+    {
+      "repetition": 10,
+      "cap": 3,
+      "score": 15.778196294475396,
+      "variance": 0.00020614088818644033,
+      "exact_optimum": 15.778196294475396
+    },
+    {
+      "repetition": 11,
+      "cap": 1,
+      "score": 17.185536217680646,
+      "variance": 9.192037833419037e-05,
+      "exact_optimum": 17.185536217680646
+    },
+    {
+      "repetition": 11,
+      "cap": 2,
+      "score": 17.644891349530102,
+      "variance": 0.00015884829065953201,
+      "exact_optimum": 17.644891349530102
+    },
+    {
+      "repetition": 11,
+      "cap": 3,
+      "score": 17.644891349530102,
+      "variance": 0.00015884829065953201,
+      "exact_optimum": 17.644891349530102
+    }
+  ],
+  "heuristic_cases": [
+    {
+      "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+      "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+      "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+      "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+      "candidate_edges": 28,
+      "candidate_nodes": 8,
+      "candidate_truncation": false,
+      "K": 4,
+      "cap": 1,
+      "baseline_score": 14.351227748999733,
+      "initial_score": 14.351227748999733,
+      "baseline_variance": 9.745264273285042e-05,
+      "variance_rtol": 1e-10,
+      "variance_atol": 1e-16,
+      "risk_numerical_tolerance": 9.845264273285042e-15,
+      "time_limit": 10.0,
+      "max_moves": 30,
+      "search_proposal_limit_per_move": 1000,
+      "search_edge_scan_limit_per_move": 1000,
+      "search_unconstrained_removal_choices": 8,
+      "search_limits_are_not_feasible_set_restrictions": true,
+      "evaluated_supports": 8,
+      "risk_feasible_supports": 0,
+      "accepted_single_swaps": 0,
+      "accepted_four_cycles": 0,
+      "structural_milp": null,
+      "certified_optimal": false,
+      "last_scanned_unselected_edges": 24,
+      "last_improving_proposals_generated": 8,
+      "selected_score": 14.351227748999733,
+      "selected_variance": 9.745264273285042e-05,
+      "variance_ratio": 1.0,
+      "risk_slack": 0.0,
+      "max_degree": 1,
+      "selected_nodes": 8,
+      "selected_edges": 4,
+      "risk_train_days": 80,
+      "zero_capital_train_days": 0,
+      "objective_upper_bound": 25.791908350816925,
+      "objective_gap_upper_bound": 11.440680601817192,
+      "feasible": true,
+      "stop_reason": "no_feasible_improvement_in_bounded_search",
+      "seconds": 0.00124224997125566,
+      "history": [
+        {
+          "kind": "initial",
+          "score": 14.351227748999733,
+          "variance": 9.745264273285042e-05
+        }
+      ],
+      "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+    },
+    {
+      "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+      "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+      "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+      "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+      "candidate_edges": 28,
+      "candidate_nodes": 8,
+      "candidate_truncation": false,
+      "K": 4,
+      "cap": 2,
+      "baseline_score": 14.351227748999733,
+      "initial_score": 14.351227748999733,
+      "baseline_variance": 9.745264273285042e-05,
+      "variance_rtol": 1e-10,
+      "variance_atol": 1e-16,
+      "risk_numerical_tolerance": 9.845264273285042e-15,
+      "time_limit": 10.0,
+      "max_moves": 30,
+      "search_proposal_limit_per_move": 1000,
+      "search_edge_scan_limit_per_move": 1000,
+      "search_unconstrained_removal_choices": 8,
+      "search_limits_are_not_feasible_set_restrictions": true,
+      "evaluated_supports": 142,
+      "risk_feasible_supports": 3,
+      "accepted_single_swaps": 3,
+      "accepted_four_cycles": 0,
+      "structural_milp": null,
+      "certified_optimal": false,
+      "last_scanned_unselected_edges": 24,
+      "last_improving_proposals_generated": 12,
+      "selected_score": 22.36701029936203,
+      "selected_variance": 9.265433714292362e-05,
+      "variance_ratio": 0.9507626940084064,
+      "risk_slack": 4.7983055899268075e-06,
+      "max_degree": 2,
+      "selected_nodes": 5,
+      "selected_edges": 4,
+      "risk_train_days": 80,
+      "zero_capital_train_days": 0,
+      "objective_upper_bound": 25.791908350816925,
+      "objective_gap_upper_bound": 3.424898051454896,
+      "feasible": true,
+      "stop_reason": "no_feasible_improvement_in_bounded_search",
+      "seconds": 0.0035913330502808094,
+      "history": [
+        {
+          "kind": "initial",
+          "score": 14.351227748999733,
+          "variance": 9.745264273285042e-05
+        },
+        {
+          "kind": "single_swap",
+          "score": 18.43557395897207,
+          "variance": 9.296897005837255e-05
+        },
+        {
+          "kind": "single_swap",
+          "score": 18.90328773328102,
+          "variance": 9.030031047867048e-05
+        },
+        {
+          "kind": "single_swap",
+          "score": 22.36701029936203,
+          "variance": 9.265433714292362e-05
+        }
+      ],
+      "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+    },
+    {
+      "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+      "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+      "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+      "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+      "candidate_edges": 28,
+      "candidate_nodes": 8,
+      "candidate_truncation": false,
+      "K": 4,
+      "cap": 3,
+      "baseline_score": 14.351227748999733,
+      "initial_score": 22.36701029936203,
+      "baseline_variance": 9.745264273285042e-05,
+      "variance_rtol": 1e-10,
+      "variance_atol": 1e-16,
+      "risk_numerical_tolerance": 9.845264273285042e-15,
+      "time_limit": 10.0,
+      "max_moves": 30,
+      "search_proposal_limit_per_move": 1000,
+      "search_edge_scan_limit_per_move": 1000,
+      "search_unconstrained_removal_choices": 8,
+      "search_limits_are_not_feasible_set_restrictions": true,
+      "evaluated_supports": 27,
+      "risk_feasible_supports": 1,
+      "accepted_single_swaps": 1,
+      "accepted_four_cycles": 0,
+      "structural_milp": null,
+      "certified_optimal": false,
+      "last_scanned_unselected_edges": 24,
+      "last_improving_proposals_generated": 9,
+      "selected_score": 23.578479876501014,
+      "selected_variance": 8.840140054341951e-05,
+      "variance_ratio": 0.9071216343076162,
+      "risk_slack": 9.05124218943091e-06,
+      "max_degree": 3,
+      "selected_nodes": 5,
+      "selected_edges": 4,
+      "risk_train_days": 80,
+      "zero_capital_train_days": 0,
+      "objective_upper_bound": 25.791908350816925,
+      "objective_gap_upper_bound": 2.2134284743159114,
+      "feasible": true,
+      "stop_reason": "no_feasible_improvement_in_bounded_search",
+      "seconds": 0.0027039159322157502,
+      "history": [
+        {
+          "kind": "initial",
+          "score": 22.36701029936203,
+          "variance": 9.265433714292362e-05
+        },
+        {
+          "kind": "single_swap",
+          "score": 23.578479876501014,
+          "variance": 8.840140054341951e-05
+        }
+      ],
+      "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+    }
+  ],
+  "structural_milp_case": {
+    "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+    "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+    "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+    "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+    "candidate_edges": 28,
+    "candidate_nodes": 8,
+    "candidate_truncation": false,
+    "K": 4,
+    "cap": 2,
+    "baseline_score": 14.351227748999733,
+    "initial_score": 14.351227748999733,
+    "baseline_variance": 9.745264273285042e-05,
+    "variance_rtol": 1e-10,
+    "variance_atol": 1e-16,
+    "risk_numerical_tolerance": 9.845264273285042e-15,
+    "time_limit": 10.0,
+    "max_moves": 0,
+    "search_proposal_limit_per_move": 1024,
+    "search_edge_scan_limit_per_move": 20000,
+    "search_unconstrained_removal_choices": 8,
+    "search_limits_are_not_feasible_set_restrictions": true,
+    "evaluated_supports": 1,
+    "risk_feasible_supports": 0,
+    "accepted_single_swaps": 0,
+    "accepted_four_cycles": 0,
+    "structural_milp": {
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "dual_score_upper_bound": 25.609428628491717,
+      "mip_gap": 0.0,
+      "risk_feasible_incumbent": false,
+      "incumbent_score": 25.609428628491713,
+      "adopted": false
+    },
+    "certified_optimal": false,
+    "selected_score": 14.351227748999733,
+    "selected_variance": 9.745264273285042e-05,
+    "variance_ratio": 1.0,
+    "risk_slack": 0.0,
+    "max_degree": 1,
+    "selected_nodes": 8,
+    "selected_edges": 4,
+    "risk_train_days": 80,
+    "zero_capital_train_days": 0,
+    "objective_upper_bound": 25.609428628491717,
+    "objective_gap_upper_bound": 11.258200879491984,
+    "feasible": true,
+    "stop_reason": "max_moves",
+    "seconds": 0.010893583996221423,
+    "history": [
+      {
+        "kind": "initial",
+        "score": 14.351227748999733,
+        "variance": 9.745264273285042e-05
+      }
+    ],
+    "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+  },
+  "deterministic_four_cycle": {
+    "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+    "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+    "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+    "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+    "candidate_edges": 6,
+    "candidate_nodes": 4,
+    "candidate_truncation": false,
+    "K": 2,
+    "cap": 1,
+    "baseline_score": 2.0,
+    "initial_score": 2.0,
+    "baseline_variance": 3.878116343490305e-05,
+    "variance_rtol": 1e-10,
+    "variance_atol": 1e-16,
+    "risk_numerical_tolerance": 3.978116343490305e-15,
+    "time_limit": 5.0,
+    "max_moves": 40,
+    "search_proposal_limit_per_move": 1024,
+    "search_edge_scan_limit_per_move": 20000,
+    "search_unconstrained_removal_choices": 8,
+    "search_limits_are_not_feasible_set_restrictions": true,
+    "evaluated_supports": 3,
+    "risk_feasible_supports": 1,
+    "accepted_single_swaps": 0,
+    "accepted_four_cycles": 1,
+    "structural_milp": null,
+    "certified_optimal": true,
+    "last_scanned_unselected_edges": 4,
+    "last_improving_proposals_generated": 2,
+    "selected_score": 10.0,
+    "selected_variance": 3.878116343490305e-05,
+    "variance_ratio": 1.0,
+    "risk_slack": 0.0,
+    "max_degree": 1,
+    "selected_nodes": 4,
+    "selected_edges": 2,
+    "risk_train_days": 20,
+    "zero_capital_train_days": 0,
+    "objective_upper_bound": 10.0,
+    "objective_gap_upper_bound": 0.0,
+    "feasible": true,
+    "stop_reason": "valid_upper_bound_closed",
+    "seconds": 0.0010335419792681932,
+    "history": [
+      {
+        "kind": "initial",
+        "score": 2.0,
+        "variance": 3.878116343490305e-05
+      },
+      {
+        "kind": "four_cycle",
+        "score": 10.0,
+        "variance": 3.878116343490305e-05
+      }
+    ],
+    "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+  },
+  "invalid_cases_rejected": 3,
+  "real_month": [
+    {
+      "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+      "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+      "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+      "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+      "candidate_edges": 92665,
+      "candidate_nodes": 431,
+      "candidate_truncation": false,
+      "K": 215,
+      "cap": 1,
+      "baseline_score": 773.6054010510893,
+      "initial_score": 773.6054010510893,
+      "baseline_variance": 1.0427981104204838e-05,
+      "variance_rtol": 1e-10,
+      "variance_atol": 1e-16,
+      "risk_numerical_tolerance": 1.1427981104204839e-15,
+      "time_limit": 8.0,
+      "max_moves": 40,
+      "search_proposal_limit_per_move": 1024,
+      "search_edge_scan_limit_per_move": 20000,
+      "search_unconstrained_removal_choices": 8,
+      "search_limits_are_not_feasible_set_restrictions": true,
+      "evaluated_supports": 2275,
+      "risk_feasible_supports": 35,
+      "accepted_single_swaps": 2,
+      "accepted_four_cycles": 33,
+      "structural_milp": {
+        "status": 1,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "dual_score_upper_bound": null,
+        "mip_gap": null,
+        "risk_feasible_incumbent": false
+      },
+      "certified_optimal": false,
+      "last_scanned_unselected_edges": 5120,
+      "last_improving_proposals_generated": 84,
+      "selected_score": 825.2162899211812,
+      "selected_variance": 7.065101005729863e-06,
+      "variance_ratio": 0.677513790553478,
+      "risk_slack": 3.3628800984749746e-06,
+      "max_degree": 1,
+      "selected_nodes": 430,
+      "selected_edges": 215,
+      "risk_train_days": 252,
+      "zero_capital_train_days": 0,
+      "objective_upper_bound": 983.005750834098,
+      "objective_gap_upper_bound": 157.78946091291675,
+      "feasible": true,
+      "stop_reason": "time_limit",
+      "seconds": 8.001632165978663,
+      "history": [
+        {
+          "kind": "initial",
+          "score": 773.6054010510893,
+          "variance": 1.0427981104204838e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 778.556163132883,
+          "variance": 1.0384096718449495e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 782.1773100660328,
+          "variance": 1.0341835820090949e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 784.5395305970591,
+          "variance": 1.0150127452476998e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 786.9542263060082,
+          "variance": 1.0247373534425501e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 789.1796782751748,
+          "variance": 1.0211355641902359e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 791.3644354096767,
+          "variance": 1.0127943109565156e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 793.3661411708952,
+          "variance": 1.0036616554362137e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 795.3096168921558,
+          "variance": 1.0028770688182212e-05
+        },
+        {
+          "kind": "four_cycle",
+          "score": 796.9720038818509,
+          "variance": 7.5251763110141875e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 798.5051492108412,
+          "variance": 7.579769151081175e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 799.9437715682529,
+          "variance": 7.76919213581568e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 801.3386682254608,
+          "variance": 7.467626044385589e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 803.0749718745991,
+          "variance": 7.553683078229219e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 804.4644137767895,
+          "variance": 7.61462561429688e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 805.8010580642494,
+          "variance": 7.624066734210388e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 807.1047543537909,
+          "variance": 7.683883381333202e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 808.3744865402298,
+          "variance": 7.64978877530455e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 809.5502415608146,
+          "variance": 7.728137971786143e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 810.6421708749435,
+          "variance": 7.682025569077568e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 811.9379983813529,
+          "variance": 7.658955662911523e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 813.0225533438971,
+          "variance": 7.494693693748266e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 814.0814136649976,
+          "variance": 7.47006704042213e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 815.1186278977636,
+          "variance": 7.435426084095741e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 816.1480554864189,
+          "variance": 7.46868065552005e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 817.1381798702428,
+          "variance": 7.56064515182966e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 818.1004288341385,
+          "variance": 7.5152567909299406e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 819.0400448748026,
+          "variance": 7.288664446818032e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 819.9496494185526,
+          "variance": 7.231162912884326e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 820.8409890979442,
+          "variance": 7.299357425669966e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 821.5937598629257,
+          "variance": 7.248603306763642e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 822.339834205107,
+          "variance": 7.171559715468094e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 823.0772592956821,
+          "variance": 7.135007354002198e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 823.8062149867708,
+          "variance": 7.303950293596216e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 824.532016047071,
+          "variance": 7.2654369279969855e-06
+        },
+        {
+          "kind": "four_cycle",
+          "score": 825.2162899211812,
+          "variance": 7.065101005729863e-06
+        }
+      ],
+      "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+    },
+    {
+      "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+      "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+      "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+      "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+      "candidate_edges": 92665,
+      "candidate_nodes": 431,
+      "candidate_truncation": false,
+      "K": 215,
+      "cap": 2,
+      "baseline_score": 773.6054010510893,
+      "initial_score": 825.2162899211812,
+      "baseline_variance": 1.0427981104204838e-05,
+      "variance_rtol": 1e-10,
+      "variance_atol": 1e-16,
+      "risk_numerical_tolerance": 1.1427981104204839e-15,
+      "time_limit": 8.0,
+      "max_moves": 40,
+      "search_proposal_limit_per_move": 1024,
+      "search_edge_scan_limit_per_move": 20000,
+      "search_unconstrained_removal_choices": 8,
+      "search_limits_are_not_feasible_set_restrictions": true,
+      "evaluated_supports": 195,
+      "risk_feasible_supports": 3,
+      "accepted_single_swaps": 3,
+      "accepted_four_cycles": 0,
+      "structural_milp": {
+        "status": 1,
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+        "dual_score_upper_bound": null,
+        "mip_gap": null,
+        "risk_feasible_incumbent": false
+      },
+      "certified_optimal": false,
+      "last_scanned_unselected_edges": 13952,
+      "last_improving_proposals_generated": 98723,
+      "selected_score": 833.2873531972197,
+      "selected_variance": 7.123281402440826e-06,
+      "variance_ratio": 0.6830930485258101,
+      "risk_slack": 3.3046997017640122e-06,
+      "max_degree": 2,
+      "selected_nodes": 424,
+      "selected_edges": 215,
+      "risk_train_days": 252,
+      "zero_capital_train_days": 0,
+      "objective_upper_bound": 983.005750834098,
+      "objective_gap_upper_bound": 149.7183976368783,
+      "feasible": true,
+      "stop_reason": "time_limit",
+      "seconds": 8.14619620796293,
+      "history": [
+        {
+          "kind": "initial",
+          "score": 825.2162899211812,
+          "variance": 7.065101005729863e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 828.1940241239874,
+          "variance": 7.077921314314151e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 830.8374640168443,
+          "variance": 7.142561626941239e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 833.2873531972197,
+          "variance": 7.123281402440826e-06
+        }
+      ],
+      "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+    },
+    {
+      "solver": "exact_enumeration_or_bounded_ratio_risk_search",
+      "objective_definition": "sum(-T_STAT) over selected pairs; no expected-return objective",
+      "risk_definition": "sample variance ddof=1 of sum(source_pnl)/sum(source_capital)",
+      "zero_capital_risk_rule": "zero return only when aggregate PnL is also zero",
+      "candidate_edges": 92665,
+      "candidate_nodes": 431,
+      "candidate_truncation": false,
+      "K": 215,
+      "cap": 3,
+      "baseline_score": 773.6054010510893,
+      "initial_score": 833.2873531972197,
+      "baseline_variance": 1.0427981104204838e-05,
+      "variance_rtol": 1e-10,
+      "variance_atol": 1e-16,
+      "risk_numerical_tolerance": 1.1427981104204839e-15,
+      "time_limit": 8.0,
+      "max_moves": 40,
+      "search_proposal_limit_per_move": 1024,
+      "search_edge_scan_limit_per_move": 20000,
+      "search_unconstrained_removal_choices": 8,
+      "search_limits_are_not_feasible_set_restrictions": true,
+      "evaluated_supports": 195,
+      "risk_feasible_supports": 3,
+      "accepted_single_swaps": 3,
+      "accepted_four_cycles": 0,
+      "structural_milp": {
+        "status": 1,
+        "message": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+        "dual_score_upper_bound": 191753.2688867163,
+        "mip_gap": 246.9805105857908,
+        "risk_feasible_incumbent": false,
+        "incumbent_score": 773.2594325003527,
+        "adopted": false
+      },
+      "certified_optimal": false,
+      "last_scanned_unselected_edges": 20000,
+      "last_improving_proposals_generated": 91647,
+      "selected_score": 840.5093551554767,
+      "selected_variance": 7.075003305668396e-06,
+      "variance_ratio": 0.6784633799169014,
+      "risk_slack": 3.352977798536442e-06,
+      "max_degree": 3,
+      "selected_nodes": 418,
+      "selected_edges": 215,
+      "risk_train_days": 252,
+      "zero_capital_train_days": 0,
+      "objective_upper_bound": 983.005750834098,
+      "objective_gap_upper_bound": 142.4963956786213,
+      "feasible": true,
+      "stop_reason": "time_limit",
+      "seconds": 8.009889332926832,
+      "history": [
+        {
+          "kind": "initial",
+          "score": 833.2873531972197,
+          "variance": 7.123281402440826e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 835.7225165380817,
+          "variance": 7.147444637046e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 838.1263174914025,
+          "variance": 7.1318140129570545e-06
+        },
+        {
+          "kind": "single_swap",
+          "score": 840.5093551554767,
+          "variance": 7.075003305668396e-06
+        }
+      ],
+      "qualification": "Global optimality only when certified_optimal is true; otherwise a feasible bounded-search incumbent."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "months": [
+    "20161230"
+  ],
+  "complete": false,
+  "settings": {
+    "train_days": 252,
+    "time_limit": 8.0,
+    "structural_milp": false,
+    "max_moves": 1000
+  },
+  "code": {
+    "run.py": "5477dba975759b0122ce57fbf2f2795a217d2b4132b219c4f3bfca228b3a6eac",
+    "features.py": "7dbf01f3dc60914650d42e2203ddfc0141c6ada79a2c6a192b4e96bb4cdd822d",
+    "optimizer.py": "e6f9f32c166b1dba7103e3b87d3eb39435dc4d168d76fbcc70424e0b289af5ad",
+    "protocol.json": "59cc5aab01838acf351c136ab3200cdd1ee64a934b9eb259b0e5d02180453f67",
+    "src/trading.py": "cd5cd9c749f6ef2fce0f4f29017495ffedb9be6e5139e69f5e0bdab1afd9ee83",
+    "src/selection.py": "986f16c8f9406e37ab5f235a411f8a9f0b77d73b2e632430aa519b732df5fb87"
+  },
+  "metrics": [
+    {
+      "rows_including_duplicate_dates": 20,
+      "non_nan_rows": 20,
+      "sharpe": -0.4314376296455901,
+      "sortino": -0.5316260265223532,
+      "cumulative_return": -0.002200328822902664,
+      "simple_return": -0.002065295900526243,
+      "scope": "extended_2017",
+      "model": "SOURCE_M",
+      "start": "2017-01-03",
+      "end": "2017-01-31",
+      "unique_dates": 20,
+      "duplicate_rows": 0,
+      "annual_vol": 0.06031631586704054,
+      "max_drawdown_supplement": -0.02133780904097826,
+      "complete_requested_period": false
+    },
+    {
+      "rows_including_duplicate_dates": 20,
+      "non_nan_rows": 20,
+      "sharpe": -0.8763758347124259,
+      "sortino": -1.118767169225159,
+      "cumulative_return": -0.004520385980565478,
+      "simple_return": -0.004380456035415004,
+      "scope": "extended_2017",
+      "model": "ADF_RISK1",
+      "start": "2017-01-03",
+      "end": "2017-01-31",
+      "unique_dates": 20,
+      "duplicate_rows": 0,
+      "annual_vol": 0.06297953898322668,
+      "max_drawdown_supplement": -0.0212316952509215,
+      "complete_requested_period": false
+    },
+    {
+      "rows_including_duplicate_dates": 20,
+      "non_nan_rows": 20,
+      "sharpe": -0.2497285201626747,
+      "sortino": -0.29644855881565224,
+      "cumulative_return": -0.0014173878535079787,
+      "simple_return": -0.0012646513890494883,
+      "scope": "extended_2017",
+      "model": "ADF_RISK2",
+      "start": "2017-01-03",
+      "end": "2017-01-31",
+      "unique_dates": 20,
+      "duplicate_rows": 0,
+      "annual_vol": 0.06380772004592697,
+      "max_drawdown_supplement": -0.01912821540681664,
+      "complete_requested_period": false
+    },
+    {
+      "rows_including_duplicate_dates": 20,
+      "non_nan_rows": 20,
+      "sharpe": -0.3578361042969993,
+      "sortino": -0.4392201940646025,
+      "cumulative_return": -0.0020314477759503236,
+      "simple_return": -0.0018698215231821892,
+      "scope": "extended_2017",
+      "model": "ADF_RISK3",
+      "start": "2017-01-03",
+      "end": "2017-01-31",
+      "unique_dates": 20,
+      "duplicate_rows": 0,
+      "annual_vol": 0.06583950280361117,
+      "max_drawdown_supplement": -0.020383992544617646,
+      "complete_requested_period": false
+    }
+  ],
+  "protected_frozen_files": 950,
+  "frozen_inputs_unchanged": true,
+  "costs": "Gross only; costs are separately evaluated for the frozen published selections.",
+  "interpretation": "New bounded-search realization; not a replacement for the frozen published experiment."
+}
